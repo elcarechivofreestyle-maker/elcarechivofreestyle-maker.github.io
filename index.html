@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>FREESTYLE-WARS</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6758645059836111"
+     crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
@@ -29,7 +31,7 @@
     .adsense-container {
       margin: 20px auto;
       max-width: 728px;
-      height: 90px;
+      height: auto;
       background: #222;
       border: 2px dashed #ff004f;
       display: flex;
@@ -37,6 +39,8 @@
       justify-content: center;
       color: #aaa;
       font-size: 1em;
+      padding: 10px;
+      flex-direction: column;
     }
 
     .game-container {
@@ -57,27 +61,26 @@
       font-size: 0.9em;
       color: #666;
     }
-   @media screen and (max-width: 768px) {
-  header h1 {
-    font-size: 2em;
-  }
 
-  .adsense-container {
-    width: 100%;
-    height: auto;
-    font-size: 0.9em;
-    padding: 10px;
-  }
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
 
-  .game-container iframe {
-    height: 400px;
-  }
+      .adsense-container {
+        width: 100%;
+        font-size: 0.9em;
+      }
 
-  footer {
-    font-size: 0.8em;
-    padding: 10px;
-  }
-} 
+      .game-container iframe {
+        height: 400px;
+      }
+
+      footer {
+        font-size: 0.8em;
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -89,21 +92,27 @@
   </div>
 </header>
 
+<!-- Espacio para AdSense -->
+<div class="adsense-container">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-6758645059836111"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
 
-  <!-- Espacio para AdSense -->
-  <div class="adsense-container">
-    <!-- Aquí irá tu código de AdSense -->
-    Publicidad patrocinada
-  </div>
+<!-- Juego incrustado -->
+<div class="game-container">
+  <iframe src="https://view.genially.com/68accde9d3c0d04e5c397a17" allowfullscreen></iframe>
+</div>
 
-  <!-- Juego incrustado -->
-  <div class="game-container">
-    <iframe src="https://view.genially.com/68accde9d3c0d04e5c397a17" allowfullscreen></iframe>
-  </div>
-
-  <footer>
-    © 2025 El Carechivo Freestyle. Todos los derechos reservados.
-  </footer>
+<footer>
+  © 2025 El Carechivo Freestyle. Todos los derechos reservados.
+</footer>
 
 </body>
 </html>
