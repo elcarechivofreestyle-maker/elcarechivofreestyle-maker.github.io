@@ -1,15 +1,82 @@
 body {
-  background-color: #111;
-  color: #eee;
-  font-family: 'Arial', monospace;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('graffiti-fondo.jpg'); /* Usa una textura como las que te muestro abajo */
+  background-size: cover;
+  background-position: center;
+  color: #f0f0f0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Oscurece para que el texto resalte */
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ff0055;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 2px solid #ff0055;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #ff0055;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff0055;
+}
+
+.botones {
   text-align: center;
 }
 
 button {
-  background-color: #9c0606;
+  background-color: #ff0055;
   color: white;
-  padding: 10px 20px;
   border: none;
+  padding: 15px 25px;
   margin: 10px;
+  font-size: 1em;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6004c;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #aaa;
+  border-top: 1px solid #444;
 }
