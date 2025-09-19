@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Sobre El Carechivo</title>
+  <title>Galería de El Carechivo</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,13 +17,26 @@
     </section>
 
     <section>
-      <h2>GALERÍA - VIDEOS</h2>
-      <img src="logo2.png" alt="Logo del juego" style="width:150px;">
-      <img src="carechivo.png" alt="Imagen del Carechivo" style="width:150px;">
+      <h2>🎥 Videos</h2>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=TU_VIDEO_ID" target="_blank">Video en YouTube #1</a></li>
+        <li><a href="https://www.instagram.com/p/TU_POST_ID/" target="_blank">Post en Instagram #1</a></li>
+        <!-- Agrega más enlaces aquí -->
+      </ul>
     </section>
 
     <section>
-      <a href="galerias-videos"><button>Volver al Inicio</button></a>
+      <h2>🖼️ Galería de Fotos</h2>
+      <div class="galeria">
+        <img src="foto1.jpg" alt="Foto 1" style="width:150px;">
+        <img src="foto2.jpg" alt="Foto 2" style="width:150px;">
+        <img src="foto3.jpg" alt="Foto 3" style="width:150px;">
+        <!-- Agrega más imágenes aquí -->
+      </div>
+    </section>
+
+    <section>
+      <a href="index.html"><button>Volver al Inicio</button></a>
     </section>
   </main>
 
