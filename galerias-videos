@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre El Carechivo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ELCARECHIVOFREESTYLE</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Qué es FreestyleWars?</h2>
+
+    <section>
+      <h2>GALERIA-VIDEOS</h2>
+      <p> <main>
+    <img src="logo2.png" alt="Portada del juego" style="width:150px;"></p><img src="carechivo.png" alt="Portada del juego" style="width:150px;"></p>
+    </section>
