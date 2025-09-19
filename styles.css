@@ -5,7 +5,7 @@ body {
   background-image: url('graffiti-fondo1.jpg'); /* Usa una textura como las que te muestro abajo */
   background-size: cover;
   background-position: center;
-  color: #f0f0f0;
+  color: #000000;
 }
 
 .container {
