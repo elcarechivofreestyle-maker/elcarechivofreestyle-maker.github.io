@@ -19,3 +19,4 @@
       <p> <main>
     <img src="logo2.png" alt="Portada del juego" style="width:150px;"></p><img src="carechivo.png" alt="Portada del juego" style="width:150px;"></p>
     </section>
+   <a href="index.html"><button>Volver al Inicio</button></a>
