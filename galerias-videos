@@ -13,14 +13,19 @@
   <main>
     <section>
       <h2>¿Qué es FreestyleWars?</h2>
+      <p>FreestyleWars es un juego de trivia inspirado en batallas de rap, donde cada pregunta es un reto creativo. ¡Pon a prueba tu flow y tu conocimiento!</p>
+    </section>
 
     <section>
-      <h2>GALERIA-VIDEOS</h2>
-      <p> <main>
-    <img src="logo2.png" alt="Portada del juego" style="width:150px;"></p><img src="carechivo.png" alt="Portada del juego" style="width:150px;"></p>
+      <h2>GALERÍA - VIDEOS</h2>
+      <img src="logo2.png" alt="Logo del juego" style="width:150px;">
+      <img src="carechivo.png" alt="Imagen del Carechivo" style="width:150px;">
     </section>
-   <a href="index.html"><button>Volver al Inicio</button></a>
-</div>
+
+    <section>
+      <a href="galerias-videos"><button>Volver al Inicio</button></a>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 El Carechivo Freestyle</p>
