@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 250px;
+  max-width: 600px;
   margin: auto;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7); /* Oscurece para que el texto resalte */
@@ -45,7 +45,7 @@ header p {
 }
 
 main img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   display: block;
   margin: 0 auto 20px;
