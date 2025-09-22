@@ -8,6 +8,13 @@ body {
   color: #ffffff;
 }
 
+.adsense-container {
+  margin: 20px auto;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
 .container {
   max-width: 750px;
   margin: auto;
