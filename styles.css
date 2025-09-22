@@ -108,3 +108,15 @@ footer {
   transform: scale(1.05);
   background-color: #444;
 }
+
+.logo-inicio {
+  height: 40px; /* ajusta según tu diseño */
+  vertical-align: middle;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.logo-inicio:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
