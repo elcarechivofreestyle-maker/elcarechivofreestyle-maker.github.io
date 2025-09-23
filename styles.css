@@ -20,7 +20,7 @@ body {
   margin: auto;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7); /* Oscurece para que el texto resalte */
-  border-radius: 10px;
+  border-radius: 50px;
   box-shadow: 0 0 20px #ff0055;
 }
 
