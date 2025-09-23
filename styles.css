@@ -116,6 +116,25 @@ footer {
   transition: transform 0.2s ease;
 }
 
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
 .logo-inicio:hover {
   transform: scale(1.05);
   cursor: pointer;
