@@ -15,6 +15,55 @@ body {
   padding-top: 10px;
 }
 
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.contenedor-juego {
+  flex: 2;
+  min-width: 300px;
+}
+
+.iframe-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-info {
+  flex: 1;
+  min-width: 250px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(255, 0, 85, 0.3);
+}
+
+.contenedor-info h2 {
+  color: #ff0055;
+  margin-bottom: 10px;
+}
+
+.contenedor-info ul {
+  padding-left: 20px;
+}
+
 .container {
   max-width: 750px;
   margin: auto;
