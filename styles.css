@@ -116,6 +116,30 @@ footer {
   transition: transform 0.2s ease;
 }
 
+.enlace-con-imagen {
+  display: inline-block;
+  width: 180px;
+  margin: 10px;
+  text-align: center;
+}
+
+.enlace-con-imagen img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.enlace-con-imagen img:hover {
+  transform: scale(1.05);
+}
+
+.enlace-con-imagen span {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
