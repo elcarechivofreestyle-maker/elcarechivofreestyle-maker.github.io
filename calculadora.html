@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Batalla</title>
 
-  <!-- Enlace al archivo CSS -->
+  <!-- Estilos globales del sitio -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Estilos específicos de la calculadora -->
   <link rel="stylesheet" href="calculadora.css">
 </head>
 <body>
 
-  <!-- Tu menú de navegación -->
+  <!-- Menú de navegación -->
   <nav class="menu">
     <a href="index.html">
       <img src="logo-carechivo.jpg" alt="Inicio" class="logo-inicio">
@@ -21,34 +24,36 @@
     <a href="calculadora.html">Calculadora de Batalla</a>
   </nav>
 
-  <!-- Tu módulo de calculadora -->
-  <div class="calculadora-container">
-    <h2>Calculadora de Batalla</h2>
-    <div class="calculadora">
-      <div class="mc">
-        <h3>MC A</h3>
-        <input type="number" placeholder="Ronda 1" class="a">
-        <input type="number" placeholder="Ronda 2" class="a">
-        <input type="number" placeholder="Ronda 3" class="a">
-        <input type="number" placeholder="Ronda 4" class="a">
-        <input type="number" placeholder="Ronda 5" class="a">
-        <p>Total: <span id="totalA">0</span></p>
+  <!-- Contenido principal -->
+  <main>
+    <div class="calculadora-container">
+      <h2>Calculadora de Batalla</h2>
+      <div class="calculadora">
+        <div class="mc">
+          <h3>MC A</h3>
+          <input type="number" placeholder="Ronda 1" class="a">
+          <input type="number" placeholder="Ronda 2" class="a">
+          <input type="number" placeholder="Ronda 3" class="a">
+          <input type="number" placeholder="Ronda 4" class="a">
+          <input type="number" placeholder="Ronda 5" class="a">
+          <p>Total: <span id="totalA">0</span></p>
+        </div>
+        <div class="mc">
+          <h3>MC B</h3>
+          <input type="number" placeholder="Ronda 1" class="b">
+          <input type="number" placeholder="Ronda 2" class="b">
+          <input type="number" placeholder="Ronda 3" class="b">
+          <input type="number" placeholder="Ronda 4" class="b">
+          <input type="number" placeholder="Ronda 5" class="b">
+          <p>Total: <span id="totalB">0</span></p>
+        </div>
       </div>
-      <div class="mc">
-        <h3>MC B</h3>
-        <input type="number" placeholder="Ronda 1" class="b">
-        <input type="number" placeholder="Ronda 2" class="b">
-        <input type="number" placeholder="Ronda 3" class="b">
-        <input type="number" placeholder="Ronda 4" class="b">
-        <input type="number" placeholder="Ronda 5" class="b">
-        <p>Total: <span id="totalB">0</span></p>
-      </div>
+      <button onclick="calcular()">Calcular</button>
+      <button onclick="limpiar()">Limpiar</button>
     </div>
-    <button onclick="calcular()">Calcular</button>
-    <button onclick="limpiar()">Limpiar</button>
-  </div>
+  </main>
 
-  <!-- Enlace al archivo JavaScript -->
+  <!-- Script de la calculadora -->
   <script src="calculadora.js"></script>
 </body>
 </html>
