@@ -1,25 +1,54 @@
-<div class="calculadora-container">
-  <h2>Calculadora de Batalla</h2>
-  <div class="calculadora">
-    <div class="mc">
-      <h3>MC A</h3>
-      <input type="number" placeholder="Ronda 1" class="a">
-      <input type="number" placeholder="Ronda 2" class="a">
-      <input type="number" placeholder="Ronda 3" class="a">
-      <input type="number" placeholder="Ronda 4" class="a">
-      <input type="number" placeholder="Ronda 5" class="a">
-      <p>Total: <span id="totalA">0</span></p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Batalla</title>
+
+  <!-- Enlace al archivo CSS -->
+  <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+
+  <!-- Tu menú de navegación -->
+  <nav class="menu">
+    <a href="index.html">
+      <img src="logo-carechivo.jpg" alt="Inicio" class="logo-inicio">
+    </a>
+    <a href="juego.html">Jugar Ahora</a>
+    <a href="proyecto.html">Sobre elcarechivofreestyle</a>
+    <a href="galerias-videos.html">Anexos</a>
+    <a href="calculadora.html">Calculadora de Batalla</a>
+  </nav>
+
+  <!-- Tu módulo de calculadora -->
+  <div class="calculadora-container">
+    <h2>Calculadora de Batalla</h2>
+    <div class="calculadora">
+      <div class="mc">
+        <h3>MC A</h3>
+        <input type="number" placeholder="Ronda 1" class="a">
+        <input type="number" placeholder="Ronda 2" class="a">
+        <input type="number" placeholder="Ronda 3" class="a">
+        <input type="number" placeholder="Ronda 4" class="a">
+        <input type="number" placeholder="Ronda 5" class="a">
+        <p>Total: <span id="totalA">0</span></p>
+      </div>
+      <div class="mc">
+        <h3>MC B</h3>
+        <input type="number" placeholder="Ronda 1" class="b">
+        <input type="number" placeholder="Ronda 2" class="b">
+        <input type="number" placeholder="Ronda 3" class="b">
+        <input type="number" placeholder="Ronda 4" class="b">
+        <input type="number" placeholder="Ronda 5" class="b">
+        <p>Total: <span id="totalB">0</span></p>
+      </div>
     </div>
-    <div class="mc">
-      <h3>MC B</h3>
-      <input type="number" placeholder="Ronda 1" class="b">
-      <input type="number" placeholder="Ronda 2" class="b">
-      <input type="number" placeholder="Ronda 3" class="b">
-      <input type="number" placeholder="Ronda 4" class="b">
-      <input type="number" placeholder="Ronda 5" class="b">
-      <p>Total: <span id="totalB">0</span></p>
-    </div>
+    <button onclick="calcular()">Calcular</button>
+    <button onclick="limpiar()">Limpiar</button>
   </div>
-  <button onclick="calcular()">Calcular</button>
-  <button onclick="limpiar()">Limpiar</button>
-</div>
+
+  <!-- Enlace al archivo JavaScript -->
+  <script src="calculadora.js"></script>
+</body>
+</html>
