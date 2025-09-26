@@ -1,54 +1,96 @@
-<div class="calculadora-compacta">
-  <table>
-    <thead>
-      <tr>
-        <th>MC</th>
-        <th>R1</th>
-        <th>R2</th>
-        <th>R3</th>
-        <th>R4</th>
-        <th>R5</th>
-        <th>Total</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><input type="text" id="nombreA" placeholder="Nombre MC A"></td>
-        <td><input type="number" class="a"></td>
-        <td><input type="number" class="a"></td>
-        <td><input type="number" class="a"></td>
-        <td><input type="number" class="a"></td>
-        <td><input type="number" class="a"></td>
-        <td><span id="totalA">0</span></td>
-      </tr>
-      <tr>
-        <td><input type="text" id="nombreB" placeholder="Nombre MC B"></td>
-        <td><input type="number" class="b"></td>
-        <td><input type="number" class="b"></td>
-        <td><input type="number" class="b"></td>
-        <td><input type="number" class="b"></td>
-        <td><input type="number" class="b"></td>
-        <td><span id="totalB">0</span></td>
-      </tr>
-    </tbody>
-  </table>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Batalla | ElCarechivoFreestyle</title>
+  <link rel="stylesheet" href="styles.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body style="background-color: #000; color: #fff; font-family: sans-serif;">
 
-  <div style="margin-top: 20px;">
-    <button onclick="calcular()">Calcular</button>
-    <button onclick="limpiar()">Limpiar</button>
+  <header>
+    <h1 style="text-align: center; color: #ff004f;">ELCARECHIVOFREESTYLE</h1>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav class="menu">
+    <a href="index.html">
+      <img src="logo-carechivo.jpg" alt="Inicio" class="logo-inicio">
+    </a>
+    <a href="juego.html">Jugar Ahora</a>
+    <a href="proyecto.html">Sobre elcarechivofreestyle</a>
+    <a href="galerias-videos.html">Anexos</a>
+    <a href="calculadora.html">Calculadora de Batalla</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <div style="max-width: 1000px; margin: 40px auto; padding: 20px; background: #111; box-shadow: 0 0 20px #ff004f;">
+      <h2 style="color: #ff004f;">🎤 Calculadora de Batalla</h2>
+      <p>Evalúa el rendimiento de los MCs en cada ronda y determina quién se lleva la victoria. ¡Ideal para jueces, fanáticos y organizadores!</p>
+
+      <div class="calculadora" style="display: flex; justify-content: space-between; margin-top: 20px;">
+        <div class="mc" style="width: 45%;">
+          <h3 style="color: #ff004f;">MC A</h3>
+          <input type="number" placeholder="Ronda 1" class="a">
+          <input type="number" placeholder="Ronda 2" class="a">
+          <input type="number" placeholder="Ronda 3" class="a">
+          <input type="number" placeholder="Ronda 4" class="a">
+          <input type="number" placeholder="Ronda 5" class="a">
+          <p>Total: <span id="totalA">0</span></p>
+        </div>
+        <div class="mc" style="width: 45%;">
+          <h3 style="color: #ff004f;">MC B</h3>
+          <input type="number" placeholder="Ronda 1" class="b">
+          <input type="number" placeholder="Ronda 2" class="b">
+          <input type="number" placeholder="Ronda 3" class="b">
+          <input type="number" placeholder="Ronda 4" class="b">
+          <input type="number" placeholder="Ronda 5" class="b">
+          <p>Total: <span id="totalB">0</span></p>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px;">
+        <button onclick="calcular()" style="background-color: #ff004f; color: white; padding: 10px 20px; border: none;">Calcular</button>
+        <button onclick="limpiar()" style="background-color: #555; color: white; padding: 10px 20px; border: none;">Limpiar</button>
+      </div>
+    </div>
+  </main>
+
+  <footer style="text-align: center; margin-top: 40px;">
+    <p>&copy; 2025 El Carechivo Freestyle</p>
+  </footer>
+
+  <!-- Adsense -->
+  <div class="adsense-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6758645059836111"
+         data-ad-slot="3259983229"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </div>
 
-  <h3 id="resultadoFinal" style="margin-top: 20px; color: #ff004f;"></h3>
-</div>
+  <!-- Script de la calculadora -->
+  <script>
+    function calcular() {
+      let totalA = 0;
+      let totalB = 0;
+      document.querySelectorAll('.a').forEach(input => totalA += Number(input.value));
+      document.querySelectorAll('.b').forEach(input => totalB += Number(input.value));
+      document.getElementById('totalA').textContent = totalA;
+      document.getElementById('totalB').textContent = totalB;
+    }
 
-<script>
-function calcular() {
-  let totalA = 0;
-  let totalB = 0;
-  document.querySelectorAll('.a').forEach(input => totalA += Number(input.value));
-  document.querySelectorAll('.b').forEach(input => totalB += Number(input.value));
-  document.getElementById('totalA').textContent = totalA;
-  document.getElementById('totalB').textContent = totalB;
-
-  const nombreA = document.getElementById('nombreA').value || "MC A";
-  const nombreB = document
+    function limpiar() {
+      document.querySelectorAll('.a, .b').forEach(input => input.value = '');
+      document.getElementById('totalA').textContent = '0';
+      document.getElementById('totalB').textContent = '0';
+    }
+  </script>
+</body>
+</html>
