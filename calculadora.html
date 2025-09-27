@@ -92,20 +92,38 @@
 
   <!-- Script de la calculadora -->
   <script>
-    function calcular() {
-      let totalA = 0;
-      let totalB = 0;
-      document.querySelectorAll('.a').forEach(input => totalA += Number(input.value));
-      document.querySelectorAll('.b').forEach(input => totalB += Number(input.value));
-      document.getElementById('totalA').textContent = totalA;
-      document.getElementById('totalB').textContent = totalB;
-    }
+  function calcular() {
+    let totalA = 0;
+    let totalB = 0;
 
-    function limpiar() {
-      document.querySelectorAll('.a, .b').forEach(input => input.value = '');
-      document.getElementById('totalA').textContent = '0';
-      document.getElementById('totalB').textContent = '0';
+    document.querySelectorAll('.a').forEach(input => totalA += Number(input.value));
+    document.querySelectorAll('.b').forEach(input => totalB += Number(input.value));
+
+    document.getElementById('totalA').textContent = totalA;
+    document.getElementById('totalB').textContent = totalB;
+
+    const nombreA = document.getElementById('nombreA').value.trim() || "MC 1";
+    const nombreB = document.getElementById('nombreB').value.trim() || "MC 2";
+
+    const resultado = document.getElementById('resultadoFinal');
+
+    if (totalA > totalB) {
+      const diferencia = totalA - totalB;
+      resultado.textContent = `🏆 ¡${nombreA} gana la batalla por ${diferencia} puntos!`;
+    } else if (totalB > totalA) {
+      const diferencia = totalB - totalA;
+      resultado.textContent = `🏆 ¡${nombreB} gana la batalla por ${diferencia} puntos!`;
+    } else {
+      resultado.textContent = `🤝 ¡Empate técnico entre ${nombreA} y ${nombreB}!`;
     }
-  </script>
+  }
+
+  function limpiar() {
+    document.querySelectorAll('.a, .b').forEach(input => input.value = '');
+    document.getElementById('totalA').textContent = '0';
+    document.getElementById('totalB').textContent = '0';
+    document.getElementById('resultadoFinal').textContent = '';
+  }
+</script>
 </body>
 </html>
