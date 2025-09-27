@@ -105,7 +105,7 @@ main img {
   height: auto;
   display: block;
   margin: 0 auto 20px;
-  border-radius: 50px;
+  border-radius: 0px;
   box-shadow: 0 0 10px #b30c0c;
 }
 
