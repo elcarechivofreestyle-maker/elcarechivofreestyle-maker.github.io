@@ -297,7 +297,7 @@ footer {
 }
 
 .calculadora-container {
-  max-width: 200px;
+  max-width: 400px;
   margin: auto;
   padding: 20px;
   background: #111;
@@ -318,7 +318,7 @@ footer {
 
 .mc input {
   display: block;
-  width: 100%;
+  width: 50%;
   margin: 5px 0;
   padding: 8px;
   font-size: 16px;
