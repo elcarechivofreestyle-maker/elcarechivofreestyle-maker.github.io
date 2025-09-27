@@ -334,3 +334,22 @@ footer {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.calculadora-compacta table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calculadora-compacta th,
+.calculadora-compacta td {
+  padding: 8px;
+  text-align: center;
+}
+
+.calculadora-compacta input[type="number"],
+.calculadora-compacta input[type="text"] {
+  width: 60px; /* ajusta según tu preferencia */
+  padding: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
