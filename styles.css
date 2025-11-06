@@ -5,7 +5,7 @@ body {
   background-image: url('graffiti-fondo1.jpg'); /* Usa una textura como las que te muestro abajo */
   background-size: auto;
   background-position: center;
-  color: #ffffff;
+  color: #fff700;
 }
 
 .adsense-container {
@@ -70,7 +70,7 @@ body {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7); /* Oscurece para que el texto resalte */
   border-radius: 0px;
-  box-shadow: 0 0 20px #ff0055;
+  box-shadow: 0 0 20px #750c2f;
 }
 
 .fade-in {
