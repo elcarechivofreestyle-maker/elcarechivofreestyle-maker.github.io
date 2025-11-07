@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   background-image: url('graffiti-fondo1.jpg');
-  background-size: 300px 100px;
+  background-size: auto;
   background-position: center;
   color: #fff700;
 }
@@ -93,6 +93,21 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* -------------------- IMAGEN PRINCIPAL -------------------- */
+main {
+  text-align: center;
+}
+
+main img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 0;
+  box-shadow: 0 0 10px #b30c0c;
 }
 
 /* -------------------- MENÚ Y NAVEGACIÓN -------------------- */
@@ -332,38 +347,26 @@ button:hover {
 }
 
 /* -------------------- RESPONSIVE -------------------- */
-@media screen and (max-width: 600px) {
-  .calculadora-compacta table,
-  .calculadora-compacta thead,
-  .calculadora-compacta tbody,
-  .calculadora-compacta th,
-  .calculadora-compacta td,
-  .calculadora-compacta tr {
-    display: block;
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .contenedor-principal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-info,
+  .contenedor-juego {
     width: 100%;
+    max-width: 100%;
   }
 
-  .calculadora-compacta tr {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #444;
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .calculadora-compacta td {
-    text-align: left;
-    padding: 6px;
-  }
-}
-
-/* -------------------- ADSENSE -------------------- */
-.adsense-container {
-  margin: 20px auto;
-  text-align: center;
-  border-top: 1px solid #ccc;
-  padding-top: 10px;
-}
-
-  .calculadora-compacta input[type="number"],
-  .calculadora-compacta input[type="text"] {
-    width: 100%;
-  }
-}
+  .menu {
+    flex-direction: column;
+   
