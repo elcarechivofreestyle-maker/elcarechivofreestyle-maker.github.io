@@ -117,6 +117,69 @@ main img {
   gap: 15px;
 }
 
+/* -------------------- MENÚ PROFESIONAL -------------------- */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 10px 20px;
+  box-shadow: 0 2px 10px rgba(255, 0, 85, 0.3);
+  flex-wrap: wrap;
+}
+
+.menu-logo img {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.menu-logo img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.menu-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-links li a {
+  text-decoration: none;
+  background-color: #222;
+  color: #fff700;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-links li a:hover {
+  background-color: #ff0055;
+  transform: scale(1.05);
+}
+
+/* -------------------- RESPONSIVE MENÚ -------------------- */
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .menu-links li a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .menu a {
   text-decoration: none;
   background-color: #222;
