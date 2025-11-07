@@ -1,20 +1,42 @@
+/* -------------------- RESET Y BASE -------------------- */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-image: url('graffiti-fondo1.jpg'); /* Usa una textura como las que te muestro abajo */
+  background-image: url('graffiti-fondo1.jpg');
   background-size: auto;
   background-position: center;
   color: #fff700;
 }
 
-.adsense-container {
-  margin: 20px auto;
+/* -------------------- ESTRUCTURA GENERAL -------------------- */
+header {
   text-align: center;
-  border-top: 1px solid #ccc;
-  padding-top: 10px;
+  padding: 40px 20px;
+  border-bottom: 2px solid #ff0055;
 }
 
+header h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #ff0000;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #fafafa;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #aaa;
+  border-top: 1px solid #444;
+}
+
+/* -------------------- CONTENEDORES PRINCIPALES -------------------- */
 .contenedor-principal {
   display: flex;
   justify-content: center;
@@ -27,21 +49,6 @@ body {
 .contenedor-juego {
   flex: 2;
   min-width: 300px;
-}
-
-.iframe-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-
-.iframe-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .contenedor-info {
@@ -68,75 +75,27 @@ body {
   max-width: 750px;
   margin: auto;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7); /* Oscurece para que el texto resalte */
-  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 20px #750c2f;
 }
 
-.fade-in {
-  animation: fadeIn 1.5s ease-in;
+/* -------------------- IFRAME RESPONSIVO -------------------- */
+.iframe-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-header {
-  text-align: center;
-  padding: 40px 20px;
-  border-bottom: 2px solid #ff0055;
-}
-
-header h1 {
-  font-size: 3em;
-  margin: 0;
-  color: #ff0055;
-}
-
-header p {
-  font-size: 1.2em;
-  margin-top: 10px;
-  color: #ccc;
-}
-
-main img {
-  max-width: 75%;
-  height: auto;
-  display: block;
-  margin: 0 auto 20px;
-  border-radius: 0px;
-  box-shadow: 0 0 10px #b30c0c;
-}
-
-.botones {
-  text-align: center;
-}
-
-button {
-  background-color: #ff0055;
-  color: white;
-  border: none;
-  padding: 15px 25px;
-  margin: 10px;
-  font-size: 1em;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #e6004c;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  color: #aaa;
-  border-top: 1px solid #444;
-}
-
+/* -------------------- MENÚ Y NAVEGACIÓN -------------------- */
 .menu {
   display: flex;
   align-items: center;
@@ -147,8 +106,8 @@ footer {
   text-decoration: none;
   background-color: #222;
   color: #fff;
-  padding: 10px 10px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 0;
   font-weight: 700;
   transition: transform 0.2s ease, background-color 0.3s ease;
 }
@@ -159,53 +118,10 @@ footer {
 }
 
 .logo-inicio {
-  height: 40px; /* ajusta según tu diseño */
+  height: 50px;
   vertical-align: middle;
   margin-right: 10px;
   transition: transform 0.2s ease;
-}
-
-.enlace-con-imagen {
-  display: inline-block;
-  width: 180px;
-  margin: 10px;
-  text-align: center;
-}
-
-.enlace-con-imagen img {
-  width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.enlace-con-imagen img:hover {
-  transform: scale(1.05);
-}
-
-.enlace-con-imagen span {
-  display: block;
-  margin-top: 5px;
-  font-weight: bold;
-  color: #333;
-}
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  justify-items: center;
-  margin-top: 20px;
-}
-
-.galeria img {
-  width: 100%;
-  max-width: 150px;
-  border-radius: 6px;
-  transition: transform 0.3s ease;
-}
-
-.galeria img:hover {
-  transform: scale(1.05);
 }
 
 .logo-inicio:hover {
@@ -213,6 +129,38 @@ footer {
   cursor: pointer;
 }
 
+/* -------------------- BOTONES -------------------- */
+.botones {
+  text-align: center;
+}
+
+button {
+  background-color: #8f0101;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  margin: 10px;
+  font-size: 1em;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6004c;
+}
+
+/* -------------------- ANIMACIONES -------------------- */
+.fade-in {
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* -------------------- GALERÍA Y ENLACES VISUALES -------------------- */
 .enlaces-visuales {
   display: flex;
   flex-wrap: wrap;
@@ -222,7 +170,9 @@ footer {
 }
 
 .enlace-con-imagen {
+  display: inline-block;
   width: 180px;
+  margin: 10px;
   text-align: center;
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -247,6 +197,26 @@ footer {
   color: #333;
 }
 
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* -------------------- SECCIÓN NOVEDADES -------------------- */
 .novedades {
   padding: 40px 20px;
   background-color: #111;
@@ -257,7 +227,6 @@ footer {
 .novedades h2 {
   font-size: 2em;
   margin-bottom: 30px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .novedades-grid {
@@ -296,6 +265,7 @@ footer {
   color: #ccc;
 }
 
+/* -------------------- CALCULADORA -------------------- */
 .calculadora-container {
   max-width: 400px;
   margin: auto;
@@ -338,7 +308,7 @@ footer {
 .calculadora-compacta table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed; /* ayuda a mantener proporciones */
+  table-layout: fixed;
 }
 
 .calculadora-compacta th,
@@ -347,7 +317,6 @@ footer {
   text-align: center;
 }
 
-/* Estilo para campos numéricos */
 .calculadora-compacta input[type="number"] {
   width: 60px;
   padding: 4px;
@@ -355,7 +324,6 @@ footer {
   box-sizing: border-box;
 }
 
-/* Estilo para campos de nombre (doble de ancho) */
 .calculadora-compacta input[type="text"] {
   width: 120px;
   padding: 4px;
@@ -363,7 +331,7 @@ footer {
   box-sizing: border-box;
 }
 
-/* Responsive para pantallas pequeñas */
+/* -------------------- RESPONSIVE -------------------- */
 @media screen and (max-width: 600px) {
   .calculadora-compacta table,
   .calculadora-compacta thead,
@@ -384,6 +352,15 @@ footer {
     text-align: left;
     padding: 6px;
   }
+}
+
+/* -------------------- ADSENSE -------------------- */
+.adsense-container {
+  margin: 20px auto;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
 
   .calculadora-compacta input[type="number"],
   .calculadora-compacta input[type="text"] {
