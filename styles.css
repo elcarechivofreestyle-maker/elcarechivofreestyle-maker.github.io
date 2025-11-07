@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   background-image: url('graffiti-fondo1.jpg');
-  background-size: auto;
+  background-size: 300px 100px;
   background-position: center;
   color: #fff700;
 }
