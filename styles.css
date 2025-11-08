@@ -410,7 +410,7 @@ button:hover {
 }
 
 .social-bar {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   display: flex;
