@@ -409,6 +409,32 @@ button:hover {
   box-sizing: border-box;
 }
 
+.social-bar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 4px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
+
+.social-bar img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-bar img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
 /* -------------------- RESPONSIVE -------------------- */
 @media screen and (max-width: 768px) {
   header h1 {
@@ -429,34 +455,4 @@ button:hover {
   .galeria {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .menu {
-    flex-direction: column;
-
-    /* Estilo para la barra de redes sociales */
-.social-bar {
-    background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 6px;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  padding: 4px;
-  z-index: 1000;
-}
-
-.social-bar img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  opacity: 0.8;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.social-bar img:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
    
