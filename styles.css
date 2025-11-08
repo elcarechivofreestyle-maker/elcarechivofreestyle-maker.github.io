@@ -444,12 +444,12 @@ button:hover {
 }
 
 .social-bar img {
-  width: 8px;
-  height: 8px;
+  width: 24px;  /* antes 32px */
+  height: 24px;
   transition: transform 0.2s ease;
 }
 
 .social-bar img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);  /* más sutil */
 }
    
