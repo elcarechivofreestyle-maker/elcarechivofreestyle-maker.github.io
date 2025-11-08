@@ -435,19 +435,23 @@ button:hover {
 
     /* Estilo para la barra de redes sociales */
 .social-bar {
+    background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
   position: fixed;
   top: 10px;
   right: 10px;
   display: flex;
-  gap: 6px;
+  gap: 8px;
+  align-items: center;
+  padding: 4px;
   z-index: 1000;
 }
 
 .social-bar img {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
-  opacity: 0.85;
+  opacity: 0.8;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
