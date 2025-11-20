@@ -1,104 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <header>
-  <nav class="menu">
-  <!-- Redes sociales en la esquina superior derecha -->
-<div class="social-bar">
-  <a href="https://www.youtube.com/@elcarechivofreestyle" target="_blank" title="YouTube">
-    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
-  </a>
-  <a href="https://www.facebook.com/profile.php?id=61582870872752" target="_blank" title="Facebook">
-    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook">
-  </a>
-  <a href="https://www.instagram.com/elcarechivofreestyle/" target="_blank" title="Instagram">
-    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
-  </a>
-  <a href="elcarechivorecargado@gmail.com" title="Gmail">
-    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
-  </a>
-</div>
-    <div class="menu-logo">
-      <a href="index.html">
-        <img src="logo-carechivo.jpg" alt="Inicio" class="logo-inicio">
-      </a>
-    </div>
-    <ul class="menu-links">
-      <li><a href="juego.html">JUGAR TRIVIA WARS</a></li>
-      <li><a href="proyecto.html">SOBRE ELCARECHIVOFREESTYLE</a></li>
-      <li><a href="galerias-videos.html">ANEXOS</a></li>
-      <li><a href="calculadora.html">CALCULADORA DE RIMAS</a></li>
-    </ul>
-  </nav>
-</header>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <meta charset="UTF-8">
   <title>El Carechivo Info</title>
   <link rel="stylesheet" href="styles.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
-  <section class="voces-freestyle">
-  <h2>📝 Voces del Freestyle</h2>
 
-  <!-- Textos recientes -->
-  <div class="textos-recientes">
-    <!-- Cada tarjeta representa un texto -->
-    <article class="tarjeta-texto">
-      <h3>El poder de la palabra</h3>
-      <p class="extracto">El freestyle no es solo rima, es resistencia, es identidad, es fuego en la lengua...</p>
-      <div class="autor-info">
-        <img src="img/autores/juanito.jpg" alt="Foto de Juanito Flow">
-        <div>
-          <p><strong>Juanito Flow</strong></p>
-          <p class="redes">
-            <a href="https://instagram.com/juanitoflow" target="_blank">IG</a> |
-            <a href="https://twitter.com/juanitoflow" target="_blank">X</a>
-          </p>
-        </div>
+  <header>
+    <nav class="menu">
+      <!-- Redes sociales en la esquina superior derecha -->
+      <div class="social-bar">
+        <a href="https://www.youtube.com/@elcarechivofreestyle" target="_blank" title="YouTube">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61582870872752" target="_blank" title="Facebook">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/elcarechivofreestyle/" target="_blank" title="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
+        </a>
+        <a href="mailto:elcarechivorecargado@gmail.com" title="Gmail">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+        </a>
       </div>
-      <a href="textos/juanito-el-poder.html" class="leer-mas">Leer completo</a>
-    </article>
 
-    <!-- Repite más tarjetas aquí -->
-  </div>
+      <div class="menu-logo">
+        <a href="index.html">
+          <img src="logo-carechivo.jpg" alt="Inicio" class="logo-inicio">
+        </a>
+      </div>
 
-  <!-- Archivo lateral -->
-  <aside class="archivo-textos">
-    <h4>📚 Archivo de textos</h4>
-    <ul>
-      <li><a href="textos/ana-cronica.html">Crónica de una plaza encendida – Ana Rima</a></li>
-      <li><a href="textos/lucho-memoria.html">Memoria y métrica – Lucho Métrica</a></li>
-      <li><a href="textos/valen-ritmo.html">El ritmo como refugio – Valen Beat</a></li>
-      <!-- Agrega más enlaces aquí -->
-    </ul>
-  </aside>
+      <ul class="menu-links">
+        <li><a href="juego.html">JUGAR TRIVIA WARS</a></li>
+        <li><a href="proyecto.html">SOBRE ELCARECHIVOFREESTYLE</a></li>
+        <li><a href="galerias-videos.html">ANEXOS</a></li>
+        <li><a href="calculadora.html">CALCULADORA DE RIMAS</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Botón para enviar texto -->
-  <div class="enviar-texto">
-    <a href="https://forms.gle/tu-formulario" target="_blank" class="boton-enviar">Quiero compartir mi texto</a>
-  </div>
-</section>
-</section>
-</div>
+  <!-- Sección Voces del Freestyle -->
+  <section class="voces-freestyle">
+    <h2>📝 Voces del Freestyle</h2>
+
+    <!-- Textos recientes -->
+    <div class="textos-recientes">
+      <article class="tarjeta-texto">
+        <h3>El poder de la palabra</h3>
+        <p class="extracto">El freestyle no es solo rima, es resistencia, es identidad, es fuego en la lengua...</p>
+        <div class="autor-info">
+          <img src="img/autores/juanito.jpg" alt="Foto de Juanito Flow">
+          <div>
+            <p><strong>Juanito Flow</strong></p>
+            <p class="redes">
+              <a href="https://instagram.com/juanitoflow" target="_blank">IG</a> |
+              <a href="https://twitter.com/juanitoflow" target="_blank">X</a>
+            </p>
+          </div>
+        </div>
+        <a href="textos/juanito-el-poder.html" class="leer-mas">Leer completo</a>
+      </article>
+
+      <!-- Puedes duplicar este bloque para más textos -->
+    </div>
+
+    <!-- Archivo lateral -->
+    <aside class="archivo-textos">
+      <h4>📚 Archivo de textos</h4>
+      <ul>
+        <li><a href="textos/ana-cronica.html">Crónica de una plaza encendida – Ana Rima</a></li>
+        <li><a href="textos/lucho-memoria.html">Memoria y métrica – Lucho Métrica</a></li>
+        <li><a href="textos/valen-ritmo.html">El ritmo como refugio – Valen Beat</a></li>
+      </ul>
+    </aside>
+
+    <!-- Botón para enviar texto -->
+    <div class="enviar-texto">
+      <a href="https://forms.gle/tu-formulario" target="_blank" class="boton-enviar">Quiero compartir mi texto</a>
+    </div>
+  </section>
+
+  <!-- Adsense -->
   <div class="adsense-container">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-6758645059836111"
-       data-ad-slot="3259983229"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-</div>
-</body>
-   <footer>
-  <p>
-    <a href="privacidad.html">Política de Privacidad</a> |
-    <a href="terminos.html">Términos de Uso</a> |
-    <a href="cookies.html">Política de Cookies</a>
-  </p>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6758645059836111"
+         data-ad-slot="3259983229"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <footer>
+    <p>
+      <a href="privacidad.html">Política de Privacidad</a> |
+      <a href="terminos.html">Términos de Uso</a> |
+      <a href="cookies.html">Política de Cookies</a>
+    </p>
     <p>&copy; 2025 El Carechivo Freestyle</p>
-  </footer>      
-    </footer>
+  </footer>
+
+</body>
 </html>
