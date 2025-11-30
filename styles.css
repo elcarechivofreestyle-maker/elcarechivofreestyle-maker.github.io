@@ -5,7 +5,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-image: url('graffiti-fondo1.jpg');
   background-size: auto;
-  background-position: center;
+  background-position: right top;
   background-repeat: no-repeat; 
   color: #ffffff;
 }
