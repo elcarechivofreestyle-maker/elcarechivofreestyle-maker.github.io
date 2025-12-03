@@ -125,7 +125,6 @@ main img {
   justify-content: space-between;
   align-items: center;
   .search-container {
-    .search-container {
   background-color: rgba(34, 34, 34, 0.5); /* #222 con 50% de opacidad */
 }
   padding: 10px 20px;
@@ -153,6 +152,9 @@ main img {
 
 .menu-links li a {
   text-decoration: none;
+  .search-container {
+  background-color: rgba(34, 34, 34, 0.5); /* #222 con 50% de opacidad */
+}
   color: #fff700;
   padding: 10px 15px;
   border-radius: 6px;
@@ -186,6 +188,9 @@ main img {
 
 .menu a {
   text-decoration: none;
+  .search-container {
+  background-color: rgba(34, 34, 34, 0.5); /* #222 con 50% de opacidad */
+}
   color: #fff;
   padding: 10px;
   border-radius: 0;
