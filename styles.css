@@ -155,6 +155,7 @@ main img {
   .search-container {
   background-color: rgba(34, 34, 34, 0.5); /* #222 con 50% de opacidad */
 }
+  color: #fff700;
   padding: 10px 15px;
   border-radius: 6px;
   font-weight: bold;
