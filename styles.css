@@ -579,3 +579,35 @@ button:hover {
 .boton-enviar:hover {
   background: #ff6600;
 }
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 250px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #444;
+}
+
+#results {
+  margin-top: 20px;
+  text-align: center;
+}
