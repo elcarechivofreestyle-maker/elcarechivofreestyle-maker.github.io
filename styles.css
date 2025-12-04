@@ -115,23 +115,20 @@ main img {
 /* -------------------- MENÚ Y NAVEGACIÓN -------------------- */
 .menu {
   display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-/* -------------------- MENÚ PROFESIONAL -------------------- */
-.menu {
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  .search-container {
-  background-color: rgba(34, 34, 34, 0.5); /* #222 con 50% de opacidad */
-}
+  gap: 15px;
   padding: 10px 20px;
-  box-shadow: 0 2px 10px rgba(255, 0, 85, 0.3);
   flex-wrap: wrap;
+
+  /* Fondo gris oscuro con 50% de opacidad */
+  background-color: rgba(34, 34, 34, 0.5);
+
+  /* Sombra para darle profundidad */
+  box-shadow: 0 2px 10px rgba(255, 0, 85, 0.3);
 }
 
+/* -------------------- LOGO -------------------- */
 .menu-logo img {
   height: 70px;
   transition: transform 0.3s ease;
@@ -142,6 +139,7 @@ main img {
   cursor: pointer;
 }
 
+/* -------------------- LINKS -------------------- */
 .menu-links {
   display: flex;
   gap: 20px;
@@ -152,9 +150,6 @@ main img {
 
 .menu-links li a {
   text-decoration: none;
-  .search-container {
-  background-color: rgba(34, 34, 34, 0.9); /* #222 con 50% de opacidad */
-}
   color: #fff700;
   padding: 10px 15px;
   border-radius: 6px;
@@ -167,6 +162,12 @@ main img {
   transform: scale(1.05);
 }
 
+/* -------------------- BUSCADOR -------------------- */
+.search-container {
+  background-color: rgba(34, 34, 34, 0.5); /* gris oscuro semitransparente */
+  padding: 5px;
+  border-radius: 6px;
+}
 /* -------------------- RESPONSIVE MENÚ -------------------- */
 @media screen and (max-width: 768px) {
   .menu {
