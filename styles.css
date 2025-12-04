@@ -130,7 +130,7 @@ main img {
   flex-wrap: wrap;
 
   /* Fondo gris oscuro con 50% de opacidad */
-  background-color: rgba(34, 34, 34, 0.5);
+  background-color: rgba(34, 34, 34, 0.8);
 
   /* Sombra para darle profundidad */
   box-shadow: 0 2px 10px rgba(255, 0, 85, 0.3);
