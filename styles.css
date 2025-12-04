@@ -1,12 +1,24 @@
 /* -------------------- RESET Y BASE -------------------- */
 body {
-  /* Fondo global negro en todas las páginas */
+/* Fondo global negro */
 html, body {
   background-color: #000;   /* negro sólido */
-  color: #fff;              /* texto blanco para contraste */
-  margin: 0;                /* elimina márgenes por defecto */
-  padding: 0;               /* elimina padding por defecto */
-  min-height: 100%;         /* asegura que cubra toda la pantalla */
+  color: #fff;              /* texto claro para contraste */
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+/* Asegura que los contenedores no pinten blanco encima */
+.container,
+main,
+section,
+.novedades-grid,
+.novedad,
+.adsense-container,
+header,
+footer {
+  background-color: transparent; /* deja ver el negro del body */
 }
   margin: 0;
   padding: 0;
