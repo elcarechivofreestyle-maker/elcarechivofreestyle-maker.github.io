@@ -7,6 +7,10 @@ html, body {
   padding: 0;
   min-height: 100%;
   text-align: center;
+    background-size: auto;
+  background-attachment: fixed;
+  background-position: 50% 0%; 
+  background-repeat: no-repeat;
 }
 /* -------------------- ESTRUCTURA GENERAL -------------------- */
 header {
