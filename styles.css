@@ -18,7 +18,7 @@ section,
 .adsense-container,
 header,
 footer {
-  background-color: transparent; /* deja ver el negro del body */
+  background-color: #000; /* deja ver el negro del body */
 }
   margin: 0;
   padding: 0;
