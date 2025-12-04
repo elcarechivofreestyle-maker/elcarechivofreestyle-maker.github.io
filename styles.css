@@ -8,8 +8,108 @@ html, body {
   min-height: 100%;
   text-align: center;
 }
+/* -------------------- ESTRUCTURA GENERAL -------------------- */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 2px solid #ff0055;
+}
 
-/* -------------------- MENÚ -------------------- */
+header h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #ff0000;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #fcf003
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #aaa;
+  border-top: 1px solid #444;
+}
+
+/* -------------------- CONTENEDORES PRINCIPALES -------------------- */
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.contenedor-juego {
+  flex: 2;
+  min-width: 300px;
+}
+
+.contenedor-info {
+  flex: 1;
+  min-width: 250px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(255, 0, 85, 0.3);
+}
+
+.contenedor-info h2 {
+  color: #ff0055;
+  margin-bottom: 10px;
+}
+
+.contenedor-info ul {
+  padding-left: 20px;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px #750c2f;
+}
+
+/* -------------------- IFRAME RESPONSIVO -------------------- */
+.iframe-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* -------------------- IMAGEN PRINCIPAL -------------------- */
+main {
+  text-align: center;
+}
+
+main img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 0;
+  box-shadow: 0 0 10px #b30c0c;
+}
+
+/* -------------------- MENÚ Y NAVEGACIÓN -------------------- */
 .menu {
   display: flex;
   justify-content: space-between;
@@ -17,10 +117,15 @@ html, body {
   gap: 15px;
   padding: 10px 20px;
   flex-wrap: wrap;
+
+  /* Fondo gris oscuro con 50% de opacidad */
   background-color: rgba(34, 34, 34, 0.5);
+
+  /* Sombra para darle profundidad */
   box-shadow: 0 2px 10px rgba(255, 0, 85, 0.3);
 }
 
+/* -------------------- LOGO -------------------- */
 .menu-logo img {
   height: 60px;
   transition: transform 0.3s ease;
@@ -31,6 +136,7 @@ html, body {
   cursor: pointer;
 }
 
+/* -------------------- LINKS -------------------- */
 .menu-links {
   display: flex;
   gap: 20px;
@@ -53,7 +159,262 @@ html, body {
   transform: scale(1.05);
 }
 
-/* -------------------- SOCIAL BAR -------------------- */
+/* -------------------- BUSCADOR -------------------- */
+.search-container {
+  background-color: rgba(34, 34, 34, 0.0); /* gris oscuro semitransparente */
+  padding: 5px;
+  border-radius: 6px;
+}
+/* -------------------- RESPONSIVE MENÚ -------------------- */
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .menu-links li a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.menu a {
+  text-decoration: none;
+  .search-container {
+  background-color: rgba(34, 34, 34, 0.5); /* #222 con 50% de opacidad */
+}
+  color: #fff;
+  padding: 10px;
+  border-radius: 0;
+  font-weight: 700;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.menu a:hover {
+  transform: scale(1.05);
+  background-color: #444;
+}
+
+.logo-inicio {
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.logo-inicio:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* -------------------- BOTONES -------------------- */
+.botones {
+  text-align: center;
+}
+
+button {
+  background-color: #8f0101;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  margin: 10px;
+  font-size: 1em;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6004c;
+}
+
+/* -------------------- ANIMACIONES -------------------- */
+.fade-in {
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* -------------------- GALERÍA Y ENLACES VISUALES -------------------- */
+.enlaces-visuales {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.enlace-con-imagen {
+  display: inline-block;
+  width: 180px;
+  margin: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.enlace-con-imagen:hover {
+  transform: scale(1.05);
+}
+
+.enlace-con-imagen img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.enlace-con-imagen span {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* -------------------- SECCIÓN NOVEDADES -------------------- */
+.novedades {
+  padding: 40px 20px;
+  background-color: #111;
+  color: #222;
+  text-align: center;
+}
+
+.novedades h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.novedades-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.novedad {
+  background-color: #222;
+  border: 2px solid #444;
+  border-radius: 10px;
+  width: 300px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.novedad:hover {
+  transform: scale(1.05);
+}
+
+.novedad img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.novedad h3 {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #f0f0f0;
+}
+
+.novedad p {
+  font-size: 0.95em;
+  color: #ccc;
+}
+
+/* -------------------- CALCULADORA -------------------- */
+.calculadora-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px;
+}
+
+.calculadora {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mc {
+  flex: 1;
+}
+
+.mc input {
+  display: block;
+  width: 50%;
+  margin: 4px 0;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.calculadora-container button {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #ff0055;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calculadora-compacta table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.calculadora-compacta th,
+.calculadora-compacta td {
+  padding: 8px;
+  text-align: center;
+}
+
+.calculadora-compacta input[type="number"] {
+  width: 60px;
+  padding: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.calculadora-compacta input[type="text"] {
+  width: 120px;
+  padding: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
 .social-bar {
   position: fixed;
   top: 10px;
@@ -63,7 +424,7 @@ html, body {
   align-items: center;
   padding: 4px;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 6px;
 }
 
@@ -80,102 +441,178 @@ html, body {
   opacity: 1;
 }
 
-/* -------------------- CONTENEDORES -------------------- */
-.container {
-  max-width: 750px;
-  margin: auto;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 20px #750c2f;
-}
+/* -------------------- RESPONSIVE -------------------- */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
 
-.novedades {
-  padding: 40px 20px;
-  background-color: #000;
-  color: #eee;
-  text-align: center;
-}
+  .contenedor-principal {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.novedades-grid {
+  .contenedor-info,
+  .contenedor-juego {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .voces-freestyle {
+  background: url('img/textura-graffiti.jpg') repeat;
+  padding: 40px;
+  color: #f0f0f0;
+  font-family: 'Urbanist', sans-serif;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 30px;
+}
+
+.voces-freestyle h2 {
+  width: 100%;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+.textos-recientes {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
-.novedad {
-  background-color: #000;
-  border: 2px solid #444;
-  border-radius: 10px;
-  width: 300px;
-  padding: 15px;
+.tarjeta-texto {
+  background: rgba(0, 0, 0, 0.7);
+  border-left: 5px solid #ff3c00;
+  padding: 20px;
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
-.novedad:hover {
-  transform: scale(1.05);
+.tarjeta-texto:hover {
+  transform: scale(1.03);
 }
 
-.novedad h3 {
-  margin-top: 15px;
-  font-size: 1.2em;
-  color: #fff;
+.extracto {
+  font-style: italic;
+  margin: 10px 0;
 }
 
-.novedad p {
-  font-size: 0.95em;
-  color: #ccc;
-}
-
-/* -------------------- CALCULADORA -------------------- */
-.calculadora-container {
-  max-width: 400px;
-  margin: auto;
-  padding: 20px;
-  background: #000;
-  color: #fff;
-  border-radius: 10px;
-}
-
-.calculadora {
+.autor-info {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   gap: 10px;
+  margin-top: 10px;
 }
 
-.calculadora-container button {
-  margin: 10px 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background: #ff0055;
-  color: white;
+.autor-info img {
+  width: 5px;
+  height: 5px;
+  border-radius: 5%;
+  object-fit: cover;
+  border: 2px solid #ff3c00;
+}
+
+.redes a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.leer-mas {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00ffff;
+  text-decoration: underline;
+}
+
+.archivo-textos {
+  flex: 1;
+  background: rgba(20, 20, 20, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.archivo-textos h4 {
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.archivo-textos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.archivo-textos li {
+  margin-bottom: 10px;
+}
+
+.archivo-textos a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.archivo-textos a:hover {
+  text-decoration: underline;
+  color: #00ffff;
+}
+
+.enviar-texto {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.boton-enviar {
+  background: #ff3c00;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.boton-enviar:hover {
+  background: #ff6600;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 250px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  background-color: #111;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.calculadora-container button:hover {
-  background: #e6004c;
+.search-container button:hover {
+  background-color: #444;
 }
 
-/* -------------------- IFRAME -------------------- */
-iframe {
-  border: none;
-  width: 100%;
-  height: 80vh;
+#results {
+  margin-top: 20px;
+  text-align: center;
 }
 
-/* -------------------- BOTONES -------------------- */
-button {
-  margin: 20px;
-  padding: 10px 20px;
-  background-color: #ff0055;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #e6004c;
-}
