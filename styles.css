@@ -590,24 +590,31 @@ button:hover {
 .boton-enviar:hover {
   background: #ff6600;
 }
-
+/* -------------------- BUSCADOR -------------------- */
 .search-container {
+  position: absolute;       /* la fijamos en la esquina */
+  top: 10px;                /* separación desde arriba */
+  left: 10px;               /* separación desde la izquierda */
   display: flex;
-  justify-content: center;
-  margin: 20px;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 6px;
+  border-radius: 6px;
+  z-index: 1100;            /* encima del resto */
 }
 
 .search-container input {
-  padding: 10px;
-  width: 250px;
+  padding: 8px;
   border: 2px solid #333;
   border-radius: 5px;
+  background-color: #111;
+  color: #fff;
 }
 
 .search-container button {
-  padding: 10px 15px;
-  margin-left: 5px;
-  background-color: #111;
+  padding: 8px 12px;
+  background-color: #ff0055;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -615,7 +622,7 @@ button:hover {
 }
 
 .search-container button:hover {
-  background-color: #444;
+  background-color: #e6004c;
 }
 
 #results {
