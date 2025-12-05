@@ -168,7 +168,7 @@ main img {
 
 /* -------------------- BUSCADOR -------------------- */
 .search-container {
-  background-color: rgba(34, 34, 34, 0.0); /* gris oscuro semitransparente */
+  background-color: rgba(34, 34, 34, 0.5); /* gris oscuro semitransparente */
   padding: 5px;
   border-radius: 6px;
 }
