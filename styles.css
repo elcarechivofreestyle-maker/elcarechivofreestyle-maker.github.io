@@ -544,18 +544,23 @@ button:hover {
 }
 
 .autor-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  display: flex;            /* activa flexbox */
+  align-items: center;      /* centra verticalmente */
+  gap: 12px;                /* espacio entre foto y texto */
   margin-top: 10px;
+  text-align: left;         /* texto alineado a la izquierda */
 }
 
 .autor-info img {
-  width: 5px;
-  height: 5px;
-  border-radius: 5%;
-  object-fit: cover;
-  border: 2px solid #ff3c00;
+  width: 60px;              /* tamaño pequeño */
+  height: 60px;
+  border-radius: 50%;       /* círculo estilo avatar */
+  object-fit: cover;        /* recorta bien la foto */
+  border: 2px solid #ff3c00; /* borde freestyle */
+}
+
+.autor-info div {
+  flex: 1;                  /* texto ocupa el resto del espacio */
 }
 
 .redes a {
@@ -634,22 +639,4 @@ button:hover {
 }
 
 /* Autor-info estilo perfil */
-.autor-info {
-  display: flex;            /* activa flexbox */
-  align-items: center;      /* centra verticalmente */
-  gap: 12px;                /* espacio entre foto y texto */
-  margin-top: 10px;
-  text-align: left;         /* texto alineado a la izquierda */
-}
 
-.autor-info img {
-  width: 60px;              /* tamaño pequeño */
-  height: 60px;
-  border-radius: 50%;       /* círculo estilo avatar */
-  object-fit: cover;        /* recorta bien la foto */
-  border: 2px solid #ff3c00; /* borde freestyle */
-}
-
-.autor-info div {
-  flex: 1;                  /* texto ocupa el resto del espacio */
-}
