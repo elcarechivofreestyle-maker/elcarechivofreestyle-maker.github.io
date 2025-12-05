@@ -168,6 +168,9 @@ main img {
 
 /* -------------------- BUSCADOR -------------------- */
 .search-container {
+  position: absolute;       /* la fijamos en la esquina */
+  top: 10px;                /* separación desde arriba */
+  left: 10px;               /* separación desde la izquierda */
   background-color: rgba(34, 34, 34, 0.0); /* gris oscuro semitransparente */
   padding: 5px;
   border-radius: 6px;
