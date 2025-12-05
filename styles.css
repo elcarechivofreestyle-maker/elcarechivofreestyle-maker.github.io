@@ -10,7 +10,7 @@ html, body {
 
   /* Imagen de fondo */
   background-image: url('ccgraffiti-fondo3030.jpg'); /* tu archivo */
-  background-size: cover;        /* que cubra toda la pantalla */
+  background-size: auto;        /* que cubra toda la pantalla */
   background-position: top center; /* que se vea arriba centrada */
   background-repeat: no-repeat;  /* que no se repita */
 }
