@@ -1,24 +1,24 @@
 /* -------------------- RESET Y BASE -------------------- */
 html, body {
   background-color: #111;   /* negro sólido */
-  color: #eee;              /* texto claro */
+  color: #eee;
   font-family: 'Courier New', monospace;
   margin: 0;
   padding: 0;
   min-height: 100%;
   text-align: center;
+
+  /* Imagen de fondo */
+  background-image: url('ccgraffiti-fondo3030.jpg'); /* tu archivo */
+  background-size: cover;        /* que cubra toda la pantalla */
+  background-position: top center; /* que se vea arriba centrada */
+  background-repeat: no-repeat;  /* que no se repita */
 }
 /* -------------------- ESTRUCTURA GENERAL -------------------- */
 header {
   text-align: center;
   padding: 40px 20px;
   border-bottom: 2px solid #ff0055;
-
-  /* Imagen de fondo solo en el header */
-  background-image: url('ccgraffiti-fondo3030.jpg');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
 }
 
 header h1 {
