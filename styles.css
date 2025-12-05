@@ -633,11 +633,23 @@ button:hover {
   margin: 10px auto;  /* centrado dentro de la tarjeta */
 }
 
-/* Imágenes de autor-info (perfil) */
+/* Autor-info estilo perfil */
+.autor-info {
+  display: flex;            /* activa flexbox */
+  align-items: center;      /* centra verticalmente */
+  gap: 12px;                /* espacio entre foto y texto */
+  margin-top: 10px;
+  text-align: left;         /* texto alineado a la izquierda */
+}
+
 .autor-info img {
-  width: 60px;        /* tamaño más pequeño */
-  height: 60px;       /* cuadrado */
-  border-radius: 50%; /* círculo estilo avatar */
-  object-fit: cover;  /* recorta bien la foto */
-  border: 2px solid #ff3c00; /* borde para resaltar */
+  width: 60px;              /* tamaño pequeño */
+  height: 60px;
+  border-radius: 50%;       /* círculo estilo avatar */
+  object-fit: cover;        /* recorta bien la foto */
+  border: 2px solid #ff3c00; /* borde freestyle */
+}
+
+.autor-info div {
+  flex: 1;                  /* texto ocupa el resto del espacio */
 }
