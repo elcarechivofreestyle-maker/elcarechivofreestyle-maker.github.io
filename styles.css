@@ -118,6 +118,7 @@ main img {
 
 /* -------------------- MENÚ Y NAVEGACIÓN -------------------- */
 .menu {
+  margin-top: 2cm; /* baja el menú 2 cm */
   display: flex;
   justify-content: space-between;
   align-items: center;
