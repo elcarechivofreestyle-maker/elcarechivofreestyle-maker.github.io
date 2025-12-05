@@ -598,18 +598,6 @@ button:hover {
   background: #ff6600;
 }
 /* -------------------- BUSCADOR -------------------- */
-.search-container {
-  position: absolute;       /* la fijamos en la esquina */
-  top: 10px;                /* separación desde arriba */
-  left: 10px;               /* separación desde la izquierda */
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 6px;
-  border-radius: 6px;
-  z-index: 1100;            /* encima del resto */
-}
 
 .search-container input {
   padding: 8px;
