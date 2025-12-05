@@ -597,31 +597,5 @@ button:hover {
 .boton-enviar:hover {
   background: #ff6600;
 }
-/* -------------------- BUSCADOR -------------------- */
 
-.search-container input {
-  padding: 8px;
-  border: 2px solid #333;
-  border-radius: 5px;
-  background-color: #111;
-  color: #fff;
-}
-
-.search-container button {
-  padding: 8px 12px;
-  background-color: #ff0055;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.search-container button:hover {
-  background-color: #e6004c;
-}
-
-#results {
-  margin-top: 20px;
-  text-align: center;
-}
 
