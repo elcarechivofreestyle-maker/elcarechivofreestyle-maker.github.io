@@ -672,3 +672,174 @@ button:hover {
 .boton-enviar:hover {
   background: #ff6600;
 }
+
+  /* Voces del Freestyle */
+.voces-freestyle {
+  background: url('img/textura-graffiti.jpg') repeat;
+  padding: 40px;
+  color: #f0f0f0;
+  font-family: 'Urbanist', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.voces-freestyle h2 {
+  width: 100%;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+/* Grid de tarjetas */
+.textos-recientes {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjeta tipo revista: foto izquierda, contenido derecha */
+.tarjeta-texto {
+  background: rgba(0, 0, 0, 0.75);
+  border-left: 5px solid #ff3c00;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-texto:hover {
+  transform: scale(1.03);
+}
+
+/* Avatar del autor pequeño y circular */
+.autor-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff3c00;
+  flex-shrink: 0;
+}
+
+/* Contenido de la tarjeta */
+.tarjeta-contenido {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-contenido h3 {
+  margin: 0 0 6px 0;
+}
+
+/* Extracto */
+.extracto {
+  font-style: italic;
+  margin: 8px 0 12px;
+  color: #e6e6e6;
+  line-height: 1.5;
+  font-size: 0.98em;
+}
+
+/* Fila con autor + botón */
+.autor-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.autor-info > div {
+  flex: 1;
+  color: #e0e0e0;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+/* Botón “Leer más” */
+.leer-mas {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #00ffff;
+  color: #000;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.leer-mas:hover {
+  background: #00cccc;
+  transform: scale(1.05);
+}
+
+/* Enlaces de redes */
+.redes a {
+  color: #ffd966;
+  text-decoration: none;
+  font-weight: 600;
+}
+.redes a:hover {
+  color: #00ffff;
+  text-decoration: underline;
+}
+
+/* Lateral archivo */
+.archivo-textos {
+  flex: 1;
+  background: rgba(20, 20, 20, 0.85);
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.archivo-textos h4 {
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.archivo-textos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.archivo-textos li {
+  margin-bottom: 10px;
+}
+
+.archivo-textos a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.archivo-textos a:hover {
+  text-decoration: underline;
+  color: #00ffff;
+}
+
+/* Botón enviar */
+.enviar-texto {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.boton-enviar {
+  background: #ff3c00;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.boton-enviar:hover {
+  background: #ff6600;
+}
