@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-       <div class="search-container">
-  <input type="text" id="searchInput" placeholder="Buscar...">
-  <button onclick="searchSite()">Buscar</button>
-</div>
-
-<div id="results"></div>
   <meta charset="UTF-8">
   <title>El Carechivo Info</title>
   <link rel="stylesheet" href="styles.css">
@@ -14,9 +8,10 @@
 </head>
 <body>
 
+  <!-- Barra de menú -->
   <header>
     <nav class="menu">
-      <!-- Redes sociales en la esquina superior derecha -->
+      <!-- Redes sociales -->
       <div class="social-bar">
         <a href="https://www.youtube.com/@elcarechivofreestyle" target="_blank" title="YouTube">
           <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
@@ -43,10 +38,17 @@
         <li><a href="proyecto.html">SOBRE ELCARECHIVOFREESTYLE</a></li>
         <li><a href="galerias-videos.html">ANEXOS</a></li>
         <li><a href="calculadora.html">CALCULADORA DE RIMAS</a></li>
-        <li><a href="seccion.voces.html">HABLANDO CLARO</a></li>     
+        <li><a href="seccion.voces.html">HABLANDO CLARO</a></li>
       </ul>
     </nav>
   </header>
+
+  <!-- Buscador (movido fuera del head) -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Buscar...">
+    <button onclick="searchSite()">Buscar</button>
+  </div>
+  <div id="results"></div>
 
   <!-- Sección Voces del Freestyle -->
   <section class="voces-freestyle">
@@ -54,24 +56,30 @@
 
     <!-- Textos recientes -->
     <div class="textos-recientes">
+      <!-- Tarjeta 1 -->
       <article class="tarjeta-texto">
-        <h3>El poder de la palabra</h3>
-        <p class="extracto">El freestyle no es solo rima, es resistencia, es identidad, es fuego en la lengua...</p>
+        <!-- Avatar del autor -->
+        <img src="indriago.jpg" alt="INDRIAGO C.E.O RSG" class="autor-avatar">
 
-        
-         </div>
-        <a href="textos/juanito-el-poder.html" class="leer-mas">Leer completo</a>
-      </article>
-        <div class="autor-info">
-          <img src="indriago.jpg" alt="INDRIAGO C.E.O RSG">
-          <div>
-            <p><strong>INDRIAGO</strong></p>
-            <p class="redes">
-              <a href="https://www.facebook.com/IndriagoRapsingroserias" target="_blank">FACEBOOK</a>
-            </p>
+        <!-- Contenido -->
+        <div class="tarjeta-contenido">
+          <h3>El poder de la palabra</h3>
+          <p class="extracto">El freestyle no es solo rima, es resistencia, es identidad, es fuego en la lengua...</p>
+
+          <!-- Autor + botón -->
+          <div class="autor-info">
+            <div>
+              <p><strong>INDRIAGO</strong></p>
+              <p class="redes">
+                <a href="https://www.facebook.com/IndriagoRapsingroserias" target="_blank">Facebook</a>
+              </p>
+            </div>
+            <a href="textos/juanito-el-poder.html" class="leer-mas">Leer completo</a>
           </div>
+        </div>
+      </article>
 
-      <!-- Puedes duplicar este bloque para más textos -->
+      <!-- Duplica <article> para más textos -->
     </div>
 
     <!-- Archivo lateral -->
@@ -111,6 +119,7 @@
     </p>
     <p>&copy; 2025 El Carechivo Freestyle</p>
   </footer>
-<script src="search.js"></script>
+
+  <script src="search.js"></script>
 </body>
 </html>
