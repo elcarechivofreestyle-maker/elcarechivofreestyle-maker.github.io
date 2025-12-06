@@ -553,8 +553,8 @@ button:hover {
 }
 
 .autor-info img {
-  width: 60px;              /* tamaño pequeño */
-  height: 60px;
+  width: 20px;              /* tamaño pequeño */
+  height: 20px;
   border-radius: 50%;       /* círculo estilo avatar */
   object-fit: cover;        /* recorta bien la foto */
   border: 2px solid #ff3c00; /* borde freestyle */
@@ -638,6 +638,3 @@ button:hover {
   display: block;
   margin: 10px auto;  /* centrado dentro de la tarjeta */
 }
-
-/* Autor-info estilo perfil */
-
