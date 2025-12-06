@@ -537,52 +537,59 @@ button:hover {
   gap: 20px;
 }
 
+/* Tarjetas: mantiene tu base, pero mejora legibilidad y estructura */
 .tarjeta-texto {
   background: rgba(0, 0, 0, 0.75);
   border-left: 5px solid #ff3c00;
   padding: 20px;
   border-radius: 8px;
   transition: transform 0.3s ease;
-  display: flex;              /* layout horizontal */
-  align-items: flex-start;    /* alinea arriba */
-  gap: 15px;                  /* espacio entre foto y texto */
 }
 
 .tarjeta-texto:hover {
   transform: scale(1.03);
 }
 
-.tarjeta-texto img {
-  width: 70px;                /* foto pequeña */
-  height: 70px;
-  border-radius: 50%;         /* avatar circular */
-  object-fit: cover;
-  border: 2px solid #ff3c00;
-  flex-shrink: 0;             /* no se deforma */
-}
-
-.tarjeta-contenido {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
+/* Extracto más legible */
 .extracto {
   font-style: italic;
   margin: 8px 0;
-  color: #e0e0e0;
+  color: #e6e6e6;
+  line-height: 1.5;
+  font-size: 0.98em;
 }
 
+/* Autor: layout en fila (foto + texto + botón) */
 .autor-info {
-  font-size: 0.9em;
-  color: #ffcc00;             /* destaca el nombre del autor */
-  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  text-align: left;
 }
 
+/* Foto del autor pequeña y circular */
+.autor-info img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff3c00;
+  flex-shrink: 0;
+}
+
+/* Texto del autor legible */
+.autor-info div {
+  flex: 1;
+  color: #e0e0e0;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+/* Botón “Leer más” */
 .leer-mas {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 6px;
   padding: 6px 12px;
   background: #00ffff;
   color: #000;
@@ -590,7 +597,6 @@ button:hover {
   border-radius: 4px;
   text-decoration: none;
   transition: background 0.3s ease, transform 0.2s ease;
-  align-self: flex-start;     /* se queda alineado a la izquierda */
 }
 
 .leer-mas:hover {
@@ -598,9 +604,44 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* Enlaces de redes y archivo: mejor contraste */
+.redes a,
+.archivo-textos a {
+  color: #ffd966;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.archivo-textos a:hover,
+.redes a:hover {
+  color: #00ffff;
+  text-decoration: underline;
+}
+
+/* Controla imágenes grandes dentro de la tarjeta que NO son el avatar del autor */
+/* 1) Si la imagen está como hijo directo de .tarjeta-texto (típico banner) */
+.tarjeta-texto > img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* 2) Evita que esta regla afecte al avatar del autor */
+.autor-info img {
+  width: 48px;    /* reafirma tamaño pequeño del avatar */
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ff3c00;
+}
+
+/* Archivo lateral y botón enviar (sin cambios fuertes, solo legibilidad) */
 .archivo-textos {
   flex: 1;
-  background: rgba(20, 20, 20, 0.8);
+  background: rgba(20, 20, 20, 0.85);
   padding: 20px;
   border-radius: 8px;
   max-height: 500px;
@@ -610,25 +651,6 @@ button:hover {
 .archivo-textos h4 {
   margin-bottom: 10px;
   color: #ffcc00;
-}
-
-.archivo-textos ul {
-  list-style: none;
-  padding: 0;
-}
-
-.archivo-textos li {
-  margin-bottom: 10px;
-}
-
-.archivo-textos a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.archivo-textos a:hover {
-  text-decoration: underline;
-  color: #00ffff;
 }
 
 .enviar-texto {
