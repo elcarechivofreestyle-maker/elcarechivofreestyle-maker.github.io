@@ -555,8 +555,8 @@ button:hover {
 .autor-info img {
   width: 20px;              /* tamaño pequeño */
   height: 20px;
-  border-radius: 50%;       /* círculo estilo avatar */
-  object-fit: cover;        /* recorta bien la foto */
+  border-radius: 25%;       /* círculo estilo avatar */
+  object-fit: auto;        /* recorta bien la foto */
   border: 2px solid #ff3c00; /* borde freestyle */
 }
 
