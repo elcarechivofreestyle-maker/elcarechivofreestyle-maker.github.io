@@ -632,7 +632,7 @@ button:hover {
 
 /* Imágenes dentro de las tarjetas de texto */
 .tarjeta-texto img {
-  width: 120px;       /* ancho fijo más pequeño */
+  width: 60px;       /* ancho fijo más pequeño */
   height: auto;       /* mantiene proporción */
   border-radius: 6px; /* esquinas redondeadas */
   display: block;
