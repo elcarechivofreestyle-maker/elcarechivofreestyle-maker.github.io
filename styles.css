@@ -126,11 +126,8 @@ main img {
   padding: 20px 40px;
   flex-wrap: wrap;
 
-  /* Fondo gris oscuro con 50% de opacidad */
-  background-color: rgba(34, 34, 34, 0.5);
-
-  /* Sombra para darle profundidad */
-  box-shadow: 0 2px 10px rgba(255, 0, 85, 0.3);
+  background-color: rgba(34, 34, 34, 0.5); /* Fondo gris oscuro con opacidad */
+  box-shadow: 0 2px 10px rgba(255, 0, 85, 0.3); /* Sombra freestyle */
 }
 
 /* -------------------- LOGO -------------------- */
@@ -138,7 +135,6 @@ main img {
   height: 60px;
   transition: transform 0.3s ease;
 }
-
 .menu-logo img:hover {
   transform: scale(1.1);
   cursor: pointer;
@@ -152,7 +148,6 @@ main img {
   padding: 0;
   margin: 0;
 }
-
 .menu-links li a {
   text-decoration: none;
   color: #fff700;
@@ -161,7 +156,6 @@ main img {
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .menu-links li a:hover {
   background-color: #ff0055;
   transform: scale(1.05);
@@ -169,18 +163,17 @@ main img {
 
 /* -------------------- BUSCADOR -------------------- */
 .search-container {
-    position: absolute;       /* la fijamos en la esquina */
-  top: 5px;                /* separación desde arriba */
-  left: 10px;               /* separación desde la izquierda */
+  position: absolute;
+  top: 5px;
+  left: 10px;
   display: flex;
   align-items: center;
   gap: 5px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(34, 34, 34, 0.5);
   padding: 6px;
   border-radius: 6px;
-  z-index: 1100;            /* encima del resto */
+  z-index: 1100;
 }
-
 .search-container input {
   padding: 8px;
   border: 2px solid #333;
@@ -188,7 +181,6 @@ main img {
   background-color: #111;
   color: #fff;
 }
-
 .search-container button {
   padding: 8px 12px;
   background-color: #ff0055;
@@ -197,58 +189,52 @@ main img {
   border-radius: 5px;
   cursor: pointer;
 }
-
 .search-container button:hover {
   background-color: #e6004c;
 }
-
 #results {
   margin-top: 20px;
   text-align: center;
 }
+
 /* -------------------- RESPONSIVE MENÚ -------------------- */
 @media screen and (max-width: 768px) {
   .menu {
     flex-direction: column;
     align-items: center;
   }
-
   .menu-links {
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
   }
-
   .menu-links li a {
     width: 100%;
     text-align: center;
   }
 }
 
+/* -------------------- ENLACES DEL MENÚ -------------------- */
 .menu a {
   text-decoration: none;
-  .search-container {
-  background-color: rgba(34, 34, 34, 0.5); /* #222 con 50% de opacidad */
-}
   color: #fff;
   padding: 10px;
   border-radius: 0;
   font-weight: 700;
   transition: transform 0.2s ease, background-color 0.3s ease;
 }
-
 .menu a:hover {
   transform: scale(1.05);
   background-color: #444;
 }
 
+/* -------------------- LOGO INICIO -------------------- */
 .logo-inicio {
   height: 50px;
   vertical-align: middle;
   margin-right: 10px;
   transition: transform 0.2s ease;
 }
-
 .logo-inicio:hover {
   transform: scale(1.05);
   cursor: pointer;
@@ -258,7 +244,6 @@ main img {
 .botones {
   text-align: center;
 }
-
 button {
   background-color: #8f0101;
   color: white;
@@ -270,7 +255,6 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 button:hover {
   background-color: #e6004c;
 }
@@ -279,7 +263,6 @@ button:hover {
 .fade-in {
   animation: fadeIn 1.5s ease-in forwards;
 }
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -293,7 +276,6 @@ button:hover {
   justify-content: center;
   margin-top: 20px;
 }
-
 .enlace-con-imagen {
   display: inline-block;
   width: 180px;
@@ -305,23 +287,14 @@ button:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
-
-.enlace-con-imagen:hover {
-  transform: scale(1.05);
-}
-
-.enlace-con-imagen img {
-  width: 100%;
-  border-radius: 6px;
-}
-
+.enlace-con-imagen:hover { transform: scale(1.05); }
+.enlace-con-imagen img { width: 100%; border-radius: 6px; }
 .enlace-con-imagen span {
   display: block;
   margin-top: 8px;
   font-weight: bold;
   color: #333;
 }
-
 .galeria {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -329,17 +302,13 @@ button:hover {
   justify-items: center;
   margin-top: 20px;
 }
-
 .galeria img {
   width: 100%;
   max-width: 150px;
   border-radius: 6px;
   transition: transform 0.3s ease;
 }
-
-.galeria img:hover {
-  transform: scale(1.05);
-}
+.galeria img:hover { transform: scale(1.05); }
 
 /* -------------------- SECCIÓN NOVEDADES -------------------- */
 .novedades {
@@ -348,19 +317,16 @@ button:hover {
   color: #222;
   text-align: center;
 }
-
 .novedades h2 {
   font-size: 2em;
   margin-bottom: 30px;
 }
-
 .novedades-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-
 .novedad {
   background-color: #222;
   border: 2px solid #444;
@@ -369,26 +335,14 @@ button:hover {
   padding: 15px;
   transition: transform 0.3s ease;
 }
-
-.novedad:hover {
-  transform: scale(1.05);
-}
-
-.novedad img {
-  width: 100%;
-  border-radius: 8px;
-}
-
+.novedad:hover { transform: scale(1.05); }
+.novedad img { width: 100%; border-radius: 8px; }
 .novedad h3 {
   margin-top: 15px;
   font-size: 1.2em;
   color: #f0f0f0;
 }
-
-.novedad p {
-  font-size: 0.95em;
-  color: #ccc;
-}
+.novedad p { font-size: 0.95em; color: #ccc; }
 
 /* -------------------- CALCULADORA -------------------- */
 .calculadora-container {
@@ -400,17 +354,12 @@ button:hover {
   font-family: 'Arial', sans-serif;
   border-radius: 10px;
 }
-
 .calculadora {
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
-
-.mc {
-  flex: 1;
-}
-
+.mc { flex: 1; }
 .mc input {
   display: block;
   width: 50%;
@@ -418,7 +367,6 @@ button:hover {
   padding: 8px;
   font-size: 16px;
 }
-
 .calculadora-container button {
   margin: 10px 5px;
   padding: 10px 20px;
@@ -429,26 +377,22 @@ button:hover {
   border-radius: 5px;
   cursor: pointer;
 }
-
 .calculadora-compacta table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
 }
-
 .calculadora-compacta th,
 .calculadora-compacta td {
   padding: 8px;
   text-align: center;
 }
-
 .calculadora-compacta input[type="number"] {
   width: 60px;
   padding: 4px;
   font-size: 14px;
   box-sizing: border-box;
 }
-
 .calculadora-compacta input[type="text"] {
   width: 120px;
   padding: 4px;
@@ -456,220 +400,10 @@ button:hover {
   box-sizing: border-box;
 }
 
+/* -------------------- SOCIAL BAR -------------------- */
 .social-bar {
   position: fixed;
   top: 10px;
   right: 10px;
   display: flex;
-  gap: 8px;
-  align-items: center;
-  padding: 4px;
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 6px;
-}
-
-.social-bar img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  opacity: 0.8;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.social-bar img:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
-
-/* -------------------- RESPONSIVE -------------------- */
-@media screen and (max-width: 768px) {
-  header h1 {
-    font-size: 2em;
-  }
-
-  .contenedor-principal {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contenedor-info,
-  .contenedor-juego {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .galeria {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Voces del Freestyle */
-.voces-freestyle {
-  background: url('img/textura-graffiti.jpg') repeat;
-  padding: 40px;
-  color: #f0f0f0;
-  font-family: 'Urbanist', sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.voces-freestyle h2 {
-  width: 100%;
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px #000;
-}
-
-/* Grid de tarjetas */
-.textos-recientes {
-  flex: 2;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
-}
-
-/* Tarjeta tipo revista: foto izquierda, contenido derecha */
-.tarjeta-texto {
-  background: rgba(0, 0, 0, 0.75);
-  border-left: 5px solid #ff3c00;
-  padding: 16px;
-  border-radius: 8px;
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  transition: transform 0.3s ease;
-}
-
-.tarjeta-texto:hover {
-  transform: scale(1.03);
-}
-
-/* Avatar del autor pequeño y circular */
-.autor-avatar {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #ff3c00;
-  flex-shrink: 0;
-}
-
-/* Contenido de la tarjeta */
-.tarjeta-contenido {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.tarjeta-contenido h3 {
-  margin: 0 0 6px 0;
-}
-
-/* Extracto */
-.extracto {
-  font-style: italic;
-  margin: 8px 0 12px;
-  color: #e6e6e6;
-  line-height: 1.5;
-  font-size: 0.98em;
-}
-
-/* Fila con autor + botón */
-.autor-info {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 4px;
-}
-
-.autor-info > div {
-  flex: 1;
-  color: #e0e0e0;
-  font-size: 0.95em;
-  line-height: 1.4;
-}
-
-/* Botón “Leer más” */
-.leer-mas {
-  display: inline-block;
-  padding: 6px 12px;
-  background: #00ffff;
-  color: #000;
-  font-weight: 700;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
-  white-space: nowrap;
-}
-
-.leer-mas:hover {
-  background: #00cccc;
-  transform: scale(1.05);
-}
-
-/* Enlaces de redes */
-.redes a {
-  color: #ffd966;
-  text-decoration: none;
-  font-weight: 600;
-}
-.redes a:hover {
-  color: #00ffff;
-  text-decoration: underline;
-}
-
-/* Lateral archivo */
-.archivo-textos {
-  flex: 1;
-  background: rgba(20, 20, 20, 0.85);
-  padding: 20px;
-  border-radius: 8px;
-  max-height: 500px;
-  overflow-y: auto;
-}
-
-.archivo-textos h4 {
-  margin-bottom: 10px;
-  color: #ffcc00;
-}
-
-.archivo-textos ul {
-  list-style: none;
-  padding: 0;
-}
-
-.archivo-textos li {
-  margin-bottom: 10px;
-}
-
-.archivo-textos a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.archivo-textos a:hover {
-  text-decoration: underline;
-  color: #00ffff;
-}
-
-/* Botón enviar */
-.enviar-texto {
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.boton-enviar {
-  background: #ff3c00;
-  color: #fff;
-  padding: 12px 24px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-.boton-enviar:hover {
-  background: #ff6600;
-}
+  gap: 
