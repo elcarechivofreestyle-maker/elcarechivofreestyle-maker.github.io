@@ -197,6 +197,32 @@ main img {
   text-align: center;
 }
 
+.social-bar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 4px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
+
+.social-bar img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-bar img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
 /* -------------------- RESPONSIVE MENÚ -------------------- */
 @media screen and (max-width: 768px) {
   .menu {
@@ -212,13 +238,6 @@ main img {
     width: 100%;
     text-align: center;
   }
-  /* -------------------- SOCIAL BAR -------------------- */
-.social-bar {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  gap: 
 } /* Cierra el media query aquí */
 
 /* -------------------- VOCES DEL FREESTYLE (fuera del media) -------------------- */
