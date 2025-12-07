@@ -195,6 +195,21 @@
   <!-- Menú -->
   <header>
     <nav class="menu">
+            <!-- Redes sociales -->
+      <div class="social-bar">
+        <a href="https://www.youtube.com/@elcarechivofreestyle" target="_blank" title="YouTube">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61582870872752" target="_blank" title="Facebook">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/elcarechivofreestyle/" target="_blank" title="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
+        </a>
+        <a href="mailto:elcarechivorecargado@gmail.com" title="Gmail">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+        </a>
+      </div>
       <div class="menu-logo">
         <a href="index.html">
           <img src="logo-carechivo.jpg" alt="Inicio" class="logo-inicio">
@@ -210,6 +225,12 @@
     </nav>
   </header>
 
+    <!-- Buscador (movido fuera del head) -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Buscar...">
+    <button onclick="searchSite()">Buscar</button>
+  </div>
+  <div id="results"></div>
   <!-- Voces del Freestyle -->
   <section class="voces-freestyle">
     <h2>📝 Voces del Freestyle</h2>
