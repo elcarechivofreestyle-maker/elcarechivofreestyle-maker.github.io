@@ -161,14 +161,6 @@ main img {
   transform: scale(1.05);
 }
 
-/* -------------------- SOCIAL BAR -------------------- */
-.social-bar {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  gap: 
-
 /* -------------------- BUSCADOR -------------------- */
 .search-container {
   position: absolute;
@@ -220,6 +212,13 @@ main img {
     width: 100%;
     text-align: center;
   }
+  /* -------------------- SOCIAL BAR -------------------- */
+.social-bar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 
 } /* Cierra el media query aquí */
 
 /* -------------------- VOCES DEL FREESTYLE (fuera del media) -------------------- */
