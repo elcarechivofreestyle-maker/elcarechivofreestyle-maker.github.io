@@ -161,6 +161,14 @@ main img {
   transform: scale(1.05);
 }
 
+/* -------------------- SOCIAL BAR -------------------- */
+.social-bar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 
+
 /* -------------------- BUSCADOR -------------------- */
 .search-container {
   position: absolute;
@@ -488,11 +496,3 @@ main img {
   font-size: 14px;
   box-sizing: border-box;
 }
-
-/* -------------------- SOCIAL BAR -------------------- */
-.social-bar {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  gap: 
