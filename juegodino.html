@@ -425,8 +425,32 @@ function GanarPuntos() {
 }
 
 function GameOver() {
-    Estrellarse();
-    gameOver.style.display = "block";
+  Estrellarse();
+  gameOver.style.display = "block";
+  document.getElementById("btn-restart").style.display = "inline-block";
+}
+
+function ReiniciarJuego() {
+  // Resetear variables
+  parado = false;
+  score = 0;
+  textoScore.innerText = score;
+  gameVel = 1;
+  sueloX = 0;
+  obstaculos = [];
+  nubes = [];
+
+  // Resetear clases y estilos
+  dino.classList.remove("dino-estrellado");
+  dino.classList.add("dino-corriendo");
+  gameOver.style.display = "none";
+  document.getElementById("btn-restart").style.display = "none";
+
+  // Eliminar obstáculos y nubes del DOM
+  document.querySelectorAll(".cactus, .cactus2, .cono, .bidon, .nube").forEach(el => el.remove());
+
+  // Reiniciar loop
+  time = new Date();
 }
 
 function DetectarColision() {
