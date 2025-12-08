@@ -78,24 +78,30 @@ body{
 
 }
 
-.cactus{
-    width: 46px;
-    height: 96px;
+.cactus {
+  width: 46px;
+  height: 96px;
+  position: absolute;
+  bottom: 16px;
+  left: 600px;
+  z-index: 1;
 
-    position: absolute;
-    bottom: 16px;
-    left: 600px;
-    z-index: 1;
-
-    background: url(dinochivo/navas.png) no-repeat;
-}
-.cactus2{
-    width: 98px;
-    height: 66px;
-
-    background: url(dinochivo/prieto.png) no-repeat;
+  /* Usa ruta relativa explícita y posiciona el fondo */
+  background-image: url('./dinochivo/navas.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain; /* o '100% 100%' si quieres estirar exacto al div */
 }
 
+.cactus2 {
+  width: 98px;
+  height: 66px;
+
+  background-image: url('./dinochivo/prieto.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+}
 .nube{
     width: 92px;
     height: 26px;
