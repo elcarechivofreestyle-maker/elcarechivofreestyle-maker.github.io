@@ -33,9 +33,6 @@ body{
     background: linear-gradient(#b7d6c7, transparent) #ffe2d1;/*linear-gradient(#90ebff, white);*/
     transition: background-color 1s linear;
     overflow: hidden;
-    
-<div class="game-over">GAME OVER</div>
-<button id="btn-restart" style="display:none;">Reiniciar</button>
 
 }
 
@@ -180,6 +177,22 @@ body{
     font-family: Verdana;
     font-weight: 700;
 }
+        
+        #btn-restart {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #ff0055;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+        
+#btn-restart:hover {
+  background: #e6004c;
+}
 
 @keyframes animarDino{
     from{
@@ -206,6 +219,7 @@ body{
     </div>
 
     <div class="game-over">GAME OVER</div>
+<button id="btn-restart" style="display:none;">Reiniciar</button>
     
 
 <script>
