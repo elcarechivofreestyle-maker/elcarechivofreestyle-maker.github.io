@@ -319,15 +319,19 @@ function DecidirCrearNubes() {
 }
 
 function CrearObstaculo() {
-    var obstaculo = document.createElement("div");
-    contenedor.appendChild(obstaculo);
-    obstaculo.classList.add("cactus");
-    if(Math.random() > 0.5) obstaculo.classList.add("cactus2");
-    obstaculo.posX = contenedor.clientWidth;
-    obstaculo.style.left = contenedor.clientWidth+"px";
+  var obstaculo = document.createElement("div");
+  contenedor.appendChild(obstaculo);
 
-    obstaculos.push(obstaculo);
-    tiempoHastaObstaculo = tiempoObstaculoMin + Math.random() * (tiempoObstaculoMax-tiempoObstaculoMin) / gameVel;
+  // Selección aleatoria de tipo de obstáculo
+  var tipos = ["cactus", "cactus2", "cono", "bidon"];
+  var tipo = tipos[Math.floor(Math.random() * tipos.length)];
+  obstaculo.classList.add(tipo);
+
+  obstaculo.posX = contenedor.clientWidth;
+  obstaculo.style.left = contenedor.clientWidth + "px";
+
+  obstaculos.push(obstaculo);
+  tiempoHastaObstaculo = tiempoObstaculoMin + Math.random() * (tiempoObstaculoMax - tiempoObstaculoMin) / gameVel;
 }
 
 function CrearNube() {
