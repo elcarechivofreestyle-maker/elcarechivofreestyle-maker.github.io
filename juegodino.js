@@ -58,15 +58,33 @@
     var suelo;
     var gameOver;
 
-    function Start() {
-      gameOver = document.querySelector(".game-over");
-      suelo = document.querySelector(".suelo");
-      contenedor = document.querySelector(".contenedor");
-      textoScore = document.querySelector(".score");
-      dino = document.querySelector(".dino");
-      document.addEventListener("keydown", HandleKeyDown);
-      document.getElementById("btn-restart").addEventListener("click", ReiniciarJuego);
-    }
+var highScore = 0;
+var textoHighScore; // elemento visual
+
+function Start() {
+  gameOver = document.querySelector(".game-over");
+  suelo = document.querySelector(".suelo");
+  contenedor = document.querySelector(".contenedor");
+  textoScore = document.querySelector(".score");
+  dino = document.querySelector(".dino");
+
+  // Cargar high score
+  highScore = parseInt(localStorage.getItem('dino_highscore') || '0', 10);
+
+  // Crear/ubicar elemento visual
+  textoHighScore = document.querySelector('.highscore');
+  if (!textoHighScore) {
+    textoHighScore = document.createElement('div');
+    textoHighScore.className = 'highscore';
+    textoHighScore.textContent = 'HS: ' + highScore;
+    contenedor.appendChild(textoHighScore);
+  } else {
+    textoHighScore.textContent = 'HS: ' + highScore;
+  }
+
+  document.addEventListener("keydown", HandleKeyDown);
+  document.getElementById("btn-restart").addEventListener("click", ReiniciarJuego);
+}
 
     function Update() {
       if (parado) return;
@@ -195,21 +213,27 @@
       }
     }
 
-    function GanarPuntos() {
-      score++;
-      textoScore.innerText = score;
-      if (score == 5) {
-        gameVel = 1.5;
-        contenedor.classList.add("mediodia");
-      } else if (score == 10) {
-        gameVel = 2;
-        contenedor.classList.add("tarde");
-      } else if (score == 20) {
-        gameVel = 3;
-        contenedor.classList.add("noche");
-      }
-      suelo.style.animationDuration = (3 / gameVel) + "s";
-    }
+function GanarPuntos() {
+  score++;
+  textoScore.innerText = score;
+
+  // Velocidad y fondos
+  if (score === 5) {
+    gameVel = 1.5;
+    contenedor.classList.remove('neon','ciudad');
+    contenedor.classList.add('grafitti');
+  } else if (score === 10) {
+    gameVel = 2;
+    contenedor.classList.remove('grafitti','ciudad');
+    contenedor.classList.add('neon');
+  } else if (score === 20) {
+    gameVel = 3;
+    contenedor.classList.remove('grafitti','neon');
+    contenedor.classList.add('ciudad');
+  }
+
+  suelo.style.animationDuration = (3 / gameVel) + "s";
+}
 
     function GameOver() {
   Estrellarse();
