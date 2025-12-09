@@ -89,12 +89,13 @@
   }
 }
     function Saltar() {
-      if (dinoPosY === sueloY) {
-        saltando = true;
-        velY = impulso;
-        dino.classList.remove("dino-corriendo");
-      }
-    }
+  if (dinoPosY === sueloY) {
+    saltando = true;
+    velY = impulso;
+    dino.classList.remove("dino-corriendo");
+    try { sndSalto.currentTime = 0; sndSalto.play(); } catch(e){}
+  }
+}
 
     function MoverDinosaurio() {
       dinoPosY += velY * deltaTime;
@@ -211,10 +212,21 @@
     }
 
     function GameOver() {
-      Estrellarse();
-      gameOver.style.display = "block";
-      document.getElementById("btn-restart").style.display = "inline-block";
-    }
+  Estrellarse();
+  try { sndChoque.currentTime = 0; sndChoque.play(); } catch(e){}
+  gameOver.style.display = "block";
+  document.getElementById("btn-restart").style.display = "inline-block";
+}
+
+     // Audio
+var sndSalto = new Audio('dinochivo/salto.mp3');
+var sndChoque = new Audio('dinochivo/choque.mp3');
+
+// Opcional: volumen y sin retardo
+sndSalto.volume = 0.8;
+sndChoque.volume = 0.9;
+sndSalto.preload = 'auto';
+sndChoque.preload = 'auto';
 
     function ReiniciarJuego() {
       parado = false;
