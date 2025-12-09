@@ -83,12 +83,11 @@
     }
 
     function HandleKeyDown(ev) {
-  if (ev.code === "Space" || ev.keyCode === 32) {
-    ev.preventDefault(); // evita que la página haga scroll
+  if (!parado && (ev.code === "Space" || ev.keyCode === 32)) {
+    ev.preventDefault();
     Saltar();
   }
 }
-
     function Saltar() {
       if (dinoPosY === sueloY) {
         saltando = true;
