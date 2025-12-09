@@ -92,7 +92,7 @@ function Update() {
   if (parado) return;
 
   // acercar gameVel poco a poco al targetVel
-  gameVel += (targetVel - gameVel) * 0.05;
+  gameVel += (targetVel - gameVel) * 0.01;
 
   MoverDinosaurio();
   MoverSuelo();
