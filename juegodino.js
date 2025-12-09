@@ -231,16 +231,16 @@ function GanarPuntos() {
   }
 
   // definir velocidad objetivo y fondos
-  if (score === 5) {
-    targetVel = 1.5;
+  if (score === 10) {
+    targetVel = 1.0;
     contenedor.classList.remove('neon','ciudad');
     contenedor.classList.add('grafitti');
-  } else if (score === 10) {
-    targetVel = 2;
+  } else if (score === 15) {
+    targetVel = 1.5;
     contenedor.classList.remove('grafitti','ciudad');
     contenedor.classList.add('neon');
-  } else if (score === 20) {
-    targetVel = 3;
+  } else if (score === 30) {
+    targetVel = 2;
     contenedor.classList.remove('grafitti','neon');
     contenedor.classList.add('ciudad');
   }
@@ -257,7 +257,7 @@ function GanarPuntos() {
 }
 
      // Audio
-var sndSalto = new Audio('dinochivo/salto.mp3');
+var sndSalto = new Audio('dinochivo/salt.mp3');
 var sndChoque = new Audio('dinochivo/choque.mp3');
 
 // Opcional: volumen y sin retardo
