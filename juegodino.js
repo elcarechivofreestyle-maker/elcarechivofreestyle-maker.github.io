@@ -1,6 +1,4 @@
-  <!-- Script del juego (tu JS) -->
-  <script>
-    //****** GAME LOOP ********//
+//****** GAME LOOP ********//
     var time = new Date();
     var deltaTime = 0;
 
@@ -260,5 +258,4 @@
         (aRect.left + paddingLeft > (bRect.left + bRect.width))
       );
     }
-  </script>
 
