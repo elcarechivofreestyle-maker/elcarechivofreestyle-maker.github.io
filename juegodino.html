@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <!-- Buscador -->
-  <div class="search-container">
+        <div class="search-container">
     <input type="text" id="searchInput" placeholder="Buscar...">
     <button onclick="searchSite()">Buscar</button>
+    <div id="results"></div>
   </div>
-
+    <meta name="google-adsense-account" content="ca-pub-6758645059836111"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chivosaurio</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
+<header>
   <!-- Menú -->
   <nav class="menu">
-    <div class="menu-logo"><img src="img/logo.png" alt="Logo"></div>
-    <ul class="menu-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="seccion.voces.html">Voces</a></li>
-      <li><a href="juego.html">Juego</a></li>
+       <!-- Redes sociales en la esquina superior derecha -->
+<div class="social-bar">
+  <a href="https://www.youtube.com/@elcarechivofreestyle" target="_blank" title="YouTube">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=61582870872752" target="_blank" title="Facebook">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook">
+  </a>
+  <a href="https://www.instagram.com/elcarechivofreestyle/" target="_blank" title="Instagram">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
+  </a>
+  <a href="elcarechivorecargado@gmail.com" title="Gmail">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+  </a>
+</div>   
+    <div class="menu-logo">
+      <a href="index.html">
+        <img src="logo-carechivo.jpg" alt="Inicio" class="logo-inicio">
+      </a>   
+    </div>
+    <ul class="menu-links">          
+      <li><a href="juego.html">JUGAR TRIVIA WARS</a></li>
+      <li><a href="proyecto.html">SOBRE ELCARECHIVOFREESTYLE</a></li>
+      <li><a href="galerias-videos.html">ANEXOS</a></li>
+      <li><a href="calculadora.html">CALCULADORA DE RIMAS</a></li>
+      <li><a href="seccion.voces.html">HABLANDO CLARO</a></li>
+      <li><a href="test.html">prueba</a></li>
+      <li><a href="juegodino.html">Dinochivo</a></li>
+        
     </ul>
   </nav>
-    
+<header>    
     <style>
 
 * {
@@ -240,9 +269,9 @@ body{
 <section class="juego-freestyle">
   <h2>🎮 Dino Freestyle</h2>
 
-        <div class="contenedor">
-        
         <button id="btn-restart" style="display:none;">REINICIAR</button>
+
+        <div class="contenedor">
 
         <div class="game-over">CHOCÒN</div>
 
