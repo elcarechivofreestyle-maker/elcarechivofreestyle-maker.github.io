@@ -15,9 +15,15 @@
 
     .juego-freestyle { padding: 40px; background: #111; color: #f0f0f0; text-align: center; width: 100%; box-sizing: border-box; }
     .juego-freestyle h2 { margin-bottom: 20px; font-size: 2em; text-shadow: 2px 2px #000; }
-
+            
     .contenedor { width: 920px; height: 280px; margin: 0 auto; position: relative; background: linear-gradient(#b7d6c7, transparent) #ffe2d1; transition: background-color 1s linear; overflow: hidden; }
+/* Fondos urbanos */
+.contenedor.grafitti { background: url('dinochivo/bg-graffiti.jpg') center/cover no-repeat; }
+.contenedor.neon     { background: url('dinochivo/bg-neon.jpg') center/cover no-repeat; }
+.contenedor.ciudad   { background: url('dinochivo/bg-ciudad.jpg') center/cover no-repeat; }
 
+/* Mantén transición suave */
+.contenedor { transition: background 0.6s ease, background-color 0.6s ease; }
     .mediodia { background-color: #ffdcf3; }
     .tarde { background-color: #ffadad; }
     .noche { background-color: #aca8c7; }
