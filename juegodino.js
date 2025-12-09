@@ -217,6 +217,12 @@ function GanarPuntos() {
   score++;
   textoScore.innerText = score;
 
+  if (score > highScore) {
+    highScore = score;
+    localStorage.setItem('dino_highscore', String(highScore));
+    if (textoHighScore) textoHighScore.textContent = 'HS: ' + highScore;
+  }
+
   // Velocidad y fondos
   if (score === 5) {
     gameVel = 1.5;
@@ -253,23 +259,26 @@ sndSalto.preload = 'auto';
 sndChoque.preload = 'auto';
 
     function ReiniciarJuego() {
-      parado = false;
-      score = 0;
-      textoScore.innerText = score;
-      gameVel = 1;
-      sueloX = 0;
-      obstaculos = [];
-      nubes = [];
+  parado = false;
+  score = 0;
+  textoScore.innerText = score;
+  gameVel = 1;
+  sueloX = 0;
+  obstaculos = [];
+  nubes = [];
 
-      dino.classList.remove("dino-estrellado");
-      dino.classList.add("dino-corriendo");
-      gameOver.style.display = "none";
-      document.getElementById("btn-restart").style.display = "none";
+  dino.classList.remove("dino-estrellado");
+  dino.classList.add("dino-corriendo");
+  gameOver.style.display = "none";
+  document.getElementById("btn-restart").style.display = "none";
 
-      document.querySelectorAll(".cactus, .cactus2, .cono, .bidon, .nube").forEach(el => el.remove());
+  document.querySelectorAll(".cactus, .cactus2, .cono, .bidon, .nube").forEach(el => el.remove());
 
-      time = new Date();
-    }
+  // Mantener fondo inicial si quieres:
+  contenedor.classList.remove('grafitti','neon','ciudad');
+
+  time = new Date();
+}
 
     function DetectarColision() {
       for (var i = 0; i < obstaculos.length; i++) {
