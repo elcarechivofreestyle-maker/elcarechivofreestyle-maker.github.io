@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <!-- Buscador -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Buscar...">
+    <button onclick="searchSite()">Buscar</button>
+  </div>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chivosaurio</title>
+<body>
+  <!-- Menú -->
+  <nav class="menu">
+    <div class="menu-logo"><img src="img/logo.png" alt="Logo"></div>
+    <ul class="menu-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="seccion.voces.html">Voces</a></li>
+      <li><a href="juego.html">Juego</a></li>
+    </ul>
+  </nav>
+    
     <style>
 
 * {
@@ -35,7 +52,19 @@ body{
     overflow: hidden;
 
 }
-
+        
+.juego-freestyle {
+  padding: 40px;
+  background: #111;
+  color: #f0f0f0;
+  text-align: center;
+}
+.juego-freestyle h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-shadow: 2px 2px #000;
+}
+        
 .mediodia {
     background-color: #ffdcf3;
 }
@@ -207,8 +236,11 @@ body{
     </style>
 </head>
 <body>
+    
+<section class="juego-freestyle">
+  <h2>🎮 Dino Freestyle</h2>
 
-    <div class="contenedor">
+        <div class="contenedor">
         
         <button id="btn-restart" style="display:none;">REINICIAR</button>
 
@@ -221,6 +253,7 @@ body{
         <div class="score">0</div>
 
     </div>    
+</section>
 
 <script>
 
@@ -496,5 +529,14 @@ function IsCollision(a, b, paddingTop, paddingRight, paddingBottom, paddingLeft)
 
 
 </script>
+</body>
+    <footer>
+    <p>
+      <a href="privacidad.html">Política de Privacidad</a> |
+      <a href="terminos.html">Términos de Uso</a> |
+      <a href="cookies.html">Política de Cookies</a>
+    </p>
+    <p>&copy; 2025 El Carechivo Freestyle</p>
+  </footer>
 </body>
 </html>
