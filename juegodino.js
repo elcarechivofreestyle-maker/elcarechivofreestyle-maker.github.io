@@ -58,8 +58,10 @@
     var suelo;
     var gameOver;
 
+// Variables globales (ponlas junto con las demás al inicio del archivo)
+var targetVel = 1; // velocidad objetivo
 var highScore = 0;
-var textoHighScore; // elemento visual
+var textoHighScore; // elemento visual del high score
 
 function Start() {
   gameOver = document.querySelector(".game-over");
@@ -68,10 +70,10 @@ function Start() {
   textoScore = document.querySelector(".score");
   dino = document.querySelector(".dino");
 
-  // Cargar high score
+  // Cargar high score desde localStorage
   highScore = parseInt(localStorage.getItem('dino_highscore') || '0', 10);
 
-  // Crear/ubicar elemento visual
+  // Crear/ubicar elemento visual del high score
   textoHighScore = document.querySelector('.highscore');
   if (!textoHighScore) {
     textoHighScore = document.createElement('div');
@@ -86,19 +88,23 @@ function Start() {
   document.getElementById("btn-restart").addEventListener("click", ReiniciarJuego);
 }
 
-    function Update() {
-      if (parado) return;
+function Update() {
+  if (parado) return;
 
-      MoverDinosaurio();
-      MoverSuelo();
-      DecidirCrearObstaculos();
-      DecidirCrearNubes();
-      MoverObstaculos();
-      MoverNubes();
-      DetectarColision();
+  // acercar gameVel poco a poco al targetVel
+  gameVel += (targetVel - gameVel) * 0.05;
 
-      velY -= gravedad * deltaTime;
-    }
+  MoverDinosaurio();
+  MoverSuelo();
+  DecidirCrearObstaculos();
+  DecidirCrearNubes();
+  MoverObstaculos();
+  MoverNubes();
+  DetectarColision();
+
+  velY -= gravedad * deltaTime;
+}
+
 
     function HandleKeyDown(ev) {
   if (!parado && (ev.code === "Space" || ev.keyCode === 32)) {
@@ -217,27 +223,29 @@ function GanarPuntos() {
   score++;
   textoScore.innerText = score;
 
+  // actualizar high score si aplica
   if (score > highScore) {
     highScore = score;
     localStorage.setItem('dino_highscore', String(highScore));
     if (textoHighScore) textoHighScore.textContent = 'HS: ' + highScore;
   }
 
-  // Velocidad y fondos
+  // definir velocidad objetivo y fondos
   if (score === 5) {
-    gameVel = 1.5;
+    targetVel = 1.5;
     contenedor.classList.remove('neon','ciudad');
     contenedor.classList.add('grafitti');
   } else if (score === 10) {
-    gameVel = 2;
+    targetVel = 2;
     contenedor.classList.remove('grafitti','ciudad');
     contenedor.classList.add('neon');
   } else if (score === 20) {
-    gameVel = 3;
+    targetVel = 3;
     contenedor.classList.remove('grafitti','neon');
     contenedor.classList.add('ciudad');
   }
 
+  // el suelo se ajusta automáticamente porque gameVel se interpola
   suelo.style.animationDuration = (3 / gameVel) + "s";
 }
 
