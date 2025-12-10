@@ -160,7 +160,39 @@ main img {
   background-color: #ff0055;
   transform: scale(1.05);
 }
+/* Estilo base del dropdown */
+.menu-links li {
+  position: relative;
+}
 
+.menu-links .submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* justo debajo del enlace principal */
+  left: 0;
+  background: #111; /* color de fondo del submenú */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.menu-links .submenu li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-links .submenu li a:hover {
+  background: #333; /* color al pasar el mouse */
+}
+
+/* Mostrar el submenú al pasar el mouse */
+.menu-links li.dropdown:hover .submenu {
+  display: block;
+}
 /* -------------------- BUSCADOR -------------------- */
 .search-container {
   position: absolute;
