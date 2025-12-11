@@ -311,8 +311,8 @@ main img {
 .tarjeta-texto:hover { transform: scale(1.03); }
 
 .autor-avatar {
-  width: 84px;
-  height: 84px;
+  width: 112px;
+  height: 112px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #ff3c00;
