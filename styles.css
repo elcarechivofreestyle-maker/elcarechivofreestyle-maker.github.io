@@ -274,7 +274,7 @@ main img {
 
 /* -------------------- VOCES DEL FREESTYLE (fuera del media) -------------------- */
 .voces-freestyle {
-  background: url('img/textura-graffiti.jpg') repeat;
+  background: url('graffiti-fondo.png') repeat;
   padding: 40px;
   color: #f0f0f0;
   font-family: 'Urbanist', sans-serif;
