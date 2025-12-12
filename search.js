@@ -3,8 +3,10 @@ const pages = [
   { title: "Juego trivia Wars freestyle", url: "juego.html" },
   { title: "Galería de videos y Fotos", url: "galerias-videos.html" },
   { title: "Calculadora de Rimas", url: "calculadora.html" },
+  { title: "Juego Dinochivo", url: "juegodino.html" },
   { title: "Blog sobre rap urbano", url: "seccion.voces.html" },
   { title: "Cookies", url: "cookies.html" },
+  { title: "privacidad", url: "privacidad.html" },
   { title: "Carechivofreestyle", url: "proyecto.html" },
   { title: "Terminos", url: "terminos.html" }
 ];
