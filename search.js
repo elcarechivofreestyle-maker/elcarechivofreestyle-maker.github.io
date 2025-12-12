@@ -1,6 +1,8 @@
 // Lista de páginas y secciones de tu sitio
 const pages = [
   { title: "Juego trivia Wars freestyle", url: "juego.html" },
+  { title: "Trivia", url: "juego.html" },
+  { title: "Juego de preguntas", url: "juego.html" }
   { title: "Galería de videos y Fotos", url: "galerias-videos.html" },
   { title: "Calculadora de Rimas", url: "calculadora.html" },
   { title: "Juego Dinochivo", url: "juegodino.html" },
