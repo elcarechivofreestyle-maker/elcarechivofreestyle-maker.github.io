@@ -383,22 +383,19 @@ main img {
   gap: 20px;              /* espacio entre artículos */
 }
 
-.articulo {
-  flex: 1 1 calc(50% - 20px); /* cada artículo ocupa la mitad del ancho menos el gap */
-  box-sizing: border-box;     /* asegura que padding/border no rompan el ancho */
-  background: #fff;           /* ejemplo de fondo */
-  padding: 15px;
-  border: 1px solid #ccc;
-}
-.archivo-textos {
-  flex: 1;
-  background: rgba(20, 20, 20, 0.85);
-  padding: 20px;
-  border-radius: 8px;
-  max-height: 500px;
-  overflow-y: auto;
+/* Contenedor de los artículos */.articulos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  gap: 20px; /* espacio entre artículos */
 }
 
+/* Cada artículo */
+.articulo {
+  background: #fff; /* ejemplo */
+  padding: 15px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 .archivo-textos h4 { margin-bottom: 10px; color: #ffcc00; }
 
 .archivo-textos ul { list-style: none; padding: 0; }
