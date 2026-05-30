@@ -2,11 +2,20 @@
 <html lang="es">
 <head>
       <div class="search-container">
-  <input type="text" id="searchInput" placeholder="Buscar...">
+  <input type="text" id="searchInput" placeholder="Buscar en la web...">
   <button onclick="searchSite()">Buscar</button>
-  <div id="results"></div>
 </div>
-  <meta name="google-adsense-account" content="ca-pub-6758645059836111">
+
+<script>
+  function searchSite() {
+    const query = document.getElementById('searchInput').value.trim();
+    if (query !== "") {
+      // Abre una pestaña de Google buscando tu palabra clave SOLO dentro de tu página web
+      window.open(`https://www.google.com/search?q=site:elcarechivofreestyle.com ${encodeURIComponent(query)}`, '_blank');
+    }
+  }
+</script>
+</div>
   <meta charset="UTF-8">
   <title>FreestyleWars - Inicio</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
