@@ -1,162 +1,185 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-       <div class="search-container">
-  <input type="text" id="searchInput" placeholder="Buscar...">
-  <button onclick="searchSite()">Buscar</button>
-</div>
-
-<div id="results"></div>
-  <header>
-  <nav class="menu">
-    <!-- Redes sociales en la esquina superior derecha -->
-<div class="social-bar">
-  <a href="https://www.youtube.com/@elcarechivofreestyle" target="_blank" title="YouTube">
-    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
-  </a>
-  <a href="https://www.facebook.com/profile.php?id=61582870872752" target="_blank" title="Facebook">
-    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook">
-  </a>
-  <a href="https://www.instagram.com/elcarechivofreestyle/" target="_blank" title="Instagram">
-    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
-  </a>
-  <a href="https://vm.tiktok.com/ZMHwm5oYr1Frt-6cPSB/" title="TikTok">
-    <img src="tiktok-logo.png" alt="TikTok">
-  </a>  
-  <a href="elcarechivorecargado@gmail.com" title="Gmail">
-    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
-  </a>
-</div>
-    <div class="menu-logo">
-      <a href="index.html">
-        <img src="logo-carechivo.jpg" alt="Inicio" class="logo-inicio">
-      </a>
-    </div>
-    <ul class="menu-links">
-      <li><a href="juego.html">JUGAR TRIVIA WARS</a></li>
-      <li><a href="proyecto.html">SOBRE ELCARECHIVOFREESTYLE</a></li>
-      <li><a href="galerias-videos.html">ANEXOS</a></li>
-      <li><a href="calculadora.html">CALCULADORA DE RIMAS</a></li>
-      <li><a href="seccion.voces.html">HABLANDO CLARO</a></li>
-    </ul>
-  </nav>
-</header>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Batalla | ElCarechivoFreestyle</title>
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Configuración de Anuncios -->
   <script>
-  atOptions = {
-    'key' : '39e2ff6172557d69f92ae32aa1f6e268',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/39e2ff6172557d69f92ae32aa1f6e268/invoke.js"></script>
-
+    atOptions = {
+      'key' : '39e2ff6172557d69f92ae32aa1f6e268',
+      'format' : 'iframe',
+      'height' : 90,
+      'width' : 728,
+      'params' : {}
+    };
+  </script>
+  <script src="https://www.highperformanceformat.com/39e2ff6172557d69f92ae32aa1f6e268/invoke.js"></script>
 </head>
+<body>
+
+  <!-- Barra de Búsqueda y Redes -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Buscar...">
+    <button onclick="searchSite()">Buscar</button>
+  </div>
+  <div id="results"></div>
+
+  <header>
+    <nav class="menu">
+      <!-- Redes sociales -->
+      <div class="social-bar">
+        <a href="https://www.youtube.com/@elcarechivofreestyle" target="_blank" title="YouTube">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61582870872752" target="_blank" title="Facebook">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/elcarechivofreestyle/" target="_blank" title="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
+        </a>
+        <a href="https://vm.tiktok.com/ZMHwm5oYr1Frt-6cPSB/" title="TikTok">
+          <img src="tiktok-logo.png" alt="TikTok">
+        </a>   
+        <a href="mailto:elcarechivorecargado@gmail.com" title="Gmail">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+        </a>
+      </div>
+      <div class="menu-logo">
+        <a href="index.html">
+          <img src="logo-carechivo.jpg" alt="Inicio" class="logo-inicio">
+        </a>
+      </div>
+      <ul class="menu-links">
+        <li><a href="juego.html">JUGAR TRIVIA WARS</a></li>
+        <li><a href="proyecto.html">SOBRE ELCARECHIVOFREESTYLE</a></li>
+        <li><a href="galerias-videos.html">ANEXOS</a></li>
+        <li><a href="calculadora.html">CALCULADORA DE RIMAS</a></li>
+        <li><a href="seccion.voces.html">HABLANDO CLARO</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <header>
     <h1 style="text-align: center; color: #ffffff">ELCARECHIVOFREESTYLE</h1>
   </header>
+
   <main>
     <div style="max-width: 750px; margin: 40px auto; padding: 20px; background: #111; box-shadow: 0 0 20px #ff004f;">
       <h2 style="color: #ff004f;">🎤 Calculadora de Batalla</h2>
       <p>Evalúa el rendimiento de los MCs en cada ronda y determina quién se lleva la victoria. ¡Ideal para jueces, fanáticos y organizadores!</p>
+      
       <div class="calculadora-compacta">
-  <table>
-    <thead>
-      <tr>
-        <th>MC</th>
-        <th>R1</th>
-        <th>R2</th>
-        <th>R3</th>
-        <th>R4</th>
-        <th>R5</th>
-        <th>Total</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><input type="text" id="nombreA" placeholder="MC 1"></td>
-        <td><input type="number" class="a"></td>
-        <td><input type="number" class="a"></td>
-        <td><input type="number" class="a"></td>
-        <td><input type="number" class="a"></td>
-        <td><input type="number" class="a"></td>
-        <td><span id="totalA">0</span></td>
-      </tr>
-      <tr>
-        <td><input type="text" id="nombreB" placeholder="MC 2"></td>
-        <td><input type="number" class="b"></td>
-        <td><input type="number" class="b"></td>
-        <td><input type="number" class="b"></td>
-        <td><input type="number" class="b"></td>
-        <td><input type="number" class="b"></td>
-        <td><span id="totalB">0</span></td>
-      </tr>
-    </tbody>
-  </table>
- <h3 id="resultadoFinal" style="margin-top: 20px; color: #ff004f;"></h3>
-</div>
-    <div style="margin-top: 20px;">
-        <button onclick="calcular()" style="background-color: #ff004f; color: white; padding: 10px 20px; border: none;">Calcular</button>
-        <button onclick="limpiar()" style="background-color: #555; color: white; padding: 10px 20px; border: none;">Limpiar</button>
+        <table>
+          <thead>
+            <tr>
+              <th>MC</th>
+              <th>R1</th>
+              <th>R2</th>
+              <th>R3</th>
+              <th>R4</th>
+              <th>R5</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text" id="nombreA" placeholder="MC 1"></td>
+              <td><input type="number" class="a"></td>
+              <td><input type="number" class="a"></td>
+              <td><input type="number" class="a"></td>
+              <td><input type="number" class="a"></td>
+              <td><input type="number" class="a"></td>
+              <td><span id="totalA">0</span></td>
+            </tr>
+            <tr>
+              <td><input type="text" id="nombreB" placeholder="MC 2"></td>
+              <td><input type="number" class="b"></td>
+              <td><input type="number" class="b"></td>
+              <td><input type="number" class="b"></td>
+              <td><input type="number" class="b"></td>
+              <td><input type="number" class="b"></td>
+              <td><span id="totalB">0</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 id="resultadoFinal" style="margin-top: 20px; color: #ff004f;"></h3>
+      </div>
+
+      <div style="margin-top: 20px;">
+        <button onclick="calcular()" style="background-color: #ff004f; color: white; padding: 10px 20px; border: none; cursor: pointer;">Calcular</button>
+        <button onclick="limpiar()" style="background-color: #555; color: white; padding: 10px 20px; border: none; cursor: pointer;">Limpiar</button>
       </div>
     </div>
   </main>
 
   <footer style="text-align: center; margin-top: 40px;">
-     <!-- Adsense -->
-</div>      
-<script async="async" data-cfasync="false" src="https://pl29585344.effectivecpmnetwork.com/d0289123e09a10dfd3ad80bc4290ac60/invoke.js"></script>
-<div id="container-d0289123e09a10dfd3ad80bc4290ac60"></div>
-  </div>
+    <!-- Publicidad Ad -->
+    <script async="async" data-cfasync="false" src="https://pl29585344.effectivecpmnetwork.com/d0289123e09a10dfd3ad80bc4290ac60/invoke.js"></script>
+    <div id="container-d0289123e09a10dfd3ad80bc4290ac60"></div>
+    
+    <p style="margin-top: 20px;">
+      <a href="privacidad.html">Política de Privacidad</a> |
+      <a href="terminos.html">Términos de Uso</a> |
+      <a href="cookies.html">Política de Cookies</a>
+    </p>
+    <p>&copy; 2026 El Carechivo Freestyle</p>
+  </footer>      
 
-  <!-- Script de la calculadora -->
+  <!-- Lógica de Programación (JavaScript) -->
   <script>
-  function calcular() {
-    let totalA = 0;
-    let totalB = 0;
+    // Función de la calculadora
+    function calcular() {
+      let totalA = 0;
+      let totalB = 0;
 
-    document.querySelectorAll('.a').forEach(input => totalA += Number(input.value));
-    document.querySelectorAll('.b').forEach(input => totalB += Number(input.value));
+      document.querySelectorAll('.a').forEach(input => totalA += Number(input.value) || 0);
+      document.querySelectorAll('.b').forEach(input => totalB += Number(input.value) || 0);
 
-    document.getElementById('totalA').textContent = totalA;
-    document.getElementById('totalB').textContent = totalB;
+      document.getElementById('totalA').textContent = totalA;
+      document.getElementById('totalB').textContent = totalB;
 
-    const nombreA = document.getElementById('nombreA').value.trim() || "MC 1";
-    const nombreB = document.getElementById('nombreB').value.trim() || "MC 2";
+      const nombreA = document.getElementById('nombreA').value.trim() || "MC 1";
+      const nombreB = document.getElementById('nombreB').value.trim() || "MC 2";
+      const resultado = document.getElementById('resultadoFinal');
 
-    const resultado = document.getElementById('resultadoFinal');
-
-    if (totalA > totalB) {
-      const diferencia = totalA - totalB;
-      resultado.textContent = `🏆 ¡${nombreA} gana la batalla por ${diferencia} puntos!`;
-    } else if (totalB > totalA) {
-      const diferencia = totalB - totalA;
-      resultado.textContent = `🏆 ¡${nombreB} gana la batalla por ${diferencia} puntos!`;
-    } else {
-      resultado.textContent = `🤝 ¡Empate técnico entre ${nombreA} y ${nombreB}!`;
+      if (totalA > totalB) {
+        const diferencia = totalA - totalB;
+        resultado.textContent = `🏆 ¡${nombreA} gana la batalla por ${diferencia} puntos!`;
+      } else if (totalB > totalA) {
+        const diferencia = totalB - totalA;
+        resultado.textContent = `🏆 ¡${nombreB} gana la batalla por ${diferencia} puntos!`;
+      } else {
+        resultado.textContent = `🤝 ¡Empate técnico entre ${nombreA} y ${nombreB}!`;
+      }
     }
-  }
 
-  function limpiar() {
-    document.querySelectorAll('.a, .b').forEach(input => input.value = '');
-    document.getElementById('totalA').textContent = '0';
-    document.getElementById('totalB').textContent = '0';
-    document.getElementById('resultadoFinal').textContent = '';
-  }
+    // Función del botón Limpiar
+    function limpiar() {
+      document.querySelectorAll('.a, .b').forEach(input => input.value = '');
+      document.getElementById('nombreA').value = '';
+      document.getElementById('nombreB').value = '';
+      document.getElementById('totalA').textContent = '0';
+      document.getElementById('totalB').textContent = '0';
+      document.getElementById('resultadoFinal').textContent = '';
+    }
+
+    // Función base para que la Barra de Búsqueda no rompa la página
+    function searchSite() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const resultsDiv = document.getElementById('results');
+      
+      if(query === "") {
+        resultsDiv.innerHTML = "";
+        return;
+      }
+      
+      // Aquí puedes conectar luego tu sistema de búsqueda real
+      resultsDiv.innerHTML = `<p style="color: white; padding: 10px;">Buscando "${query}"... (Configura aquí tu motor de búsqueda)</p>`;
+    }
+  </script>
 
 </body>
-   <footer>
-  <p>
-    <a href="privacidad.html">Política de Privacidad</a> |
-    <a href="terminos.html">Términos de Uso</a> |
-    <a href="cookies.html">Política de Cookies</a>
-  </p>
-    <p>&copy; 2025 El Carechivo Freestyle</p>
-  </footer>      
-    </footer>
 </html>
